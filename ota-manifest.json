@@ -1,9 +1,9 @@
 {
-  "version": "0.1.219",
-  "tag": "v0.1.219",
-  "releaseName": "Fire Tester firmware 0.1.219",
-  "assetName": "firmware-0.1.219.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.219/firmware-0.1.219.bin",
-  "sizeBytes": 2292768,
-  "sha256": "e0e96fb4c43d01309d89a4c790a81626fc6cccad75e2180b5cbad919fa9390a3"
+  "version": "0.1.220",
+  "tag": "v0.1.220",
+  "releaseName": "Fire Tester firmware 0.1.220",
+  "assetName": "firmware-0.1.220.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.220/firmware-0.1.220.bin",
+  "sizeBytes": 2292736,
+  "sha256": "7bb44ef53a3f1860944f242acc1c73ef51d6e753fc828f3a9fd451e3d946080d"
 }
