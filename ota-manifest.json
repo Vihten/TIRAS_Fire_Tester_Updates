@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.276",
-    "name": "Fire Tester firmware 0.1.276",
+    "tag": "v0.1.277",
+    "name": "Fire Tester firmware 0.1.277",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.276",
-  "tag": "v0.1.276",
-  "releaseName": "Fire Tester firmware 0.1.276",
-  "notes": "Fire Tester 0.1.276 keeps direct BLE Wi-Fi provisioning lightweight so the tester can restore Bluetooth reliably after checking the network credentials.",
-  "assetName": "firmware-0.1.276.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.276/firmware-0.1.276.bin",
-  "sizeBytes": 2316448,
-  "sha256": "8a1f19a0d6a86e083b3d7b3a4535ef5f522b4d89bc7c4b88466da0188f4bb662",
+  "version": "0.1.277",
+  "tag": "v0.1.277",
+  "releaseName": "Fire Tester firmware 0.1.277",
+  "notes": "Fire Tester 0.1.277 allows firmware updates while fast charging and keeps the analog joystick available after startup by making normal-boot update checks explicit.",
+  "assetName": "firmware-0.1.277.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.277/firmware-0.1.277.bin",
+  "sizeBytes": 2316432,
+  "sha256": "d492e7593815624b4d9eb206ba7e7672666998c1045eef7fef16b7ff77e9d88d",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.276/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.277/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.276/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.277/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.276/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.277/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.276.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.276/firmware-0.1.276.bin",
-      "sizeBytes": 2316448,
-      "sha256": "8a1f19a0d6a86e083b3d7b3a4535ef5f522b4d89bc7c4b88466da0188f4bb662"
+      "assetName": "firmware-0.1.277.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.277/firmware-0.1.277.bin",
+      "sizeBytes": 2316432,
+      "sha256": "d492e7593815624b4d9eb206ba7e7672666998c1045eef7fef16b7ff77e9d88d"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.276/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.277/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
