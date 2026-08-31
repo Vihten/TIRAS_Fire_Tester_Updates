@@ -1,0 +1,54 @@
+name: Publish OTA release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-ota-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out tagged release assets
+        uses: actions/checkout@v4
+
+      - name: Validate and publish GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          release_tag="${GITHUB_REF_NAME}"
+          manifest_tag="$(jq -r '.release.tag // .tag' ota-manifest.json)"
+          release_name="$(jq -r '.release.name // .releaseName' ota-manifest.json)"
+          release_notes="$(jq -r '.notes' ota-manifest.json)"
+          asset_name="$(jq -r '.assetName' ota-manifest.json)"
+          asset_dir="release-assets/${release_tag}"
+          checksums="${asset_dir}/SHA256SUMS.txt"
+
+          test "${manifest_tag}" = "${release_tag}"
+          test -s "${asset_dir}/${asset_name}"
+          test -s "${checksums}"
+          (
+            cd "${asset_dir}"
+            sha256sum --check "SHA256SUMS.txt"
+          )
+
+          if gh release view "${release_tag}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+            gh release upload "${release_tag}" "${asset_dir}/${asset_name}" "${checksums}" \
+              --repo "${GITHUB_REPOSITORY}" --clobber
+            gh release edit "${release_tag}" --repo "${GITHUB_REPOSITORY}" \
+              --latest --title "${release_name}" --notes "${release_notes}"
+          else
+            gh release create "${release_tag}" "${asset_dir}/${asset_name}" "${checksums}" \
+              --repo "${GITHUB_REPOSITORY}" --verify-tag --latest \
+              --title "${release_name}" --notes "${release_notes}"
+          fi
