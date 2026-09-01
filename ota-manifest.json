@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.280",
-    "name": "Fire Tester firmware 0.1.280",
+    "tag": "v0.1.281",
+    "name": "Fire Tester firmware 0.1.281",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.280",
-  "tag": "v0.1.280",
-  "releaseName": "Fire Tester firmware 0.1.280",
-  "notes": "Fire Tester 0.1.280 restores the automatic startup firmware check inside the non-interactive boot animation, keeps cartridge blinking alive while Wi-Fi owns ADC2, restores firmware-update LED indication, and reduces OTA screen stalls with shorter flash/network bursts.",
-  "assetName": "firmware-0.1.280.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.280/firmware-0.1.280.bin",
-  "sizeBytes": 2316720,
-  "sha256": "7d233a400e37961a97818a9a7304a70d4db3ceb578ab8a605f7d367dc8331b1c",
+  "version": "0.1.281",
+  "tag": "v0.1.281",
+  "releaseName": "Fire Tester firmware 0.1.281",
+  "notes": "Fire Tester 0.1.281 completes the automatic firmware check before exposing the ADC2 joystick, restores the cartridge blink renderer to its native 20 ms cadence during background Wi-Fi, and slows/repositions the startup star onto the logo's upper-right corner.",
+  "assetName": "firmware-0.1.281.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.281/firmware-0.1.281.bin",
+  "sizeBytes": 2316784,
+  "sha256": "a87d3e769cc87ee72bf3489fb8ce9790e1a0d65a62c6084803ded34a2802aa47",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.280/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.281/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.280/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.281/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.280/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.281/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.280.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.280/firmware-0.1.280.bin",
-      "sizeBytes": 2316720,
-      "sha256": "7d233a400e37961a97818a9a7304a70d4db3ceb578ab8a605f7d367dc8331b1c"
+      "assetName": "firmware-0.1.281.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.281/firmware-0.1.281.bin",
+      "sizeBytes": 2316784,
+      "sha256": "a87d3e769cc87ee72bf3489fb8ce9790e1a0d65a62c6084803ded34a2802aa47"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.280/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.281/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
