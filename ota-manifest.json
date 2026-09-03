@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.313",
-    "name": "Fire Tester firmware 0.1.313",
+    "tag": "v0.1.314",
+    "name": "Fire Tester firmware 0.1.314",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.313",
-  "tag": "v0.1.313",
-  "releaseName": "Fire Tester firmware 0.1.313",
-  "notes": "Fire Tester 0.1.313 lets the phone securely erase all saved Wi-Fi network names and passwords. The device performs the NVS erase outside the BLE callback and confirms success only after read-back verification.",
-  "assetName": "firmware-0.1.313.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.313/firmware-0.1.313.bin",
-  "sizeBytes": 2312272,
-  "sha256": "faa4b75cef5607085524ffd6edfb43770027fb1e0beac535b02c55a662998688",
+  "version": "0.1.314",
+  "tag": "v0.1.314",
+  "releaseName": "Fire Tester firmware 0.1.314",
+  "notes": "Fire Tester 0.1.314 exposes the authoritative saved Wi-Fi SSID list to the phone without disclosing passwords and supports confirmed deletion of one exact network while preserving all other profiles.",
+  "assetName": "firmware-0.1.314.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.314/firmware-0.1.314.bin",
+  "sizeBytes": 2315200,
+  "sha256": "b0aff113a67ed1274c8bf23a76c9ad60b21c0e65494f87dd9597f2bfb477a4dc",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.313/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.314/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.313/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.314/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.313/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.314/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.313.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.313/firmware-0.1.313.bin",
-      "sizeBytes": 2312272,
-      "sha256": "faa4b75cef5607085524ffd6edfb43770027fb1e0beac535b02c55a662998688"
+      "assetName": "firmware-0.1.314.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.314/firmware-0.1.314.bin",
+      "sizeBytes": 2315200,
+      "sha256": "b0aff113a67ed1274c8bf23a76c9ad60b21c0e65494f87dd9597f2bfb477a4dc"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.313/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.314/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "0fa262c9529dc940bf3628df0c163338289e9807edd73f186698a763a5063c42"
     }
