@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.327",
-    "name": "Fire Tester firmware 0.1.327",
+    "tag": "v0.1.328",
+    "name": "Fire Tester firmware 0.1.328",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.327",
-  "tag": "v0.1.327",
-  "releaseName": "Fire Tester firmware 0.1.327",
-  "notes": "Fire Tester 0.1.327 bounds unchanged distance, I2C and INA checks until reboot or manual CHECK, reports both distance sensors, stops all checks on the critical screen, and reports INA faults only after direct confirmation. It uses the 7.5 mOhm INA BAT shunt, renders charging voltage with V, safely adapts SW6115 input current for PC and capable chargers, keeps the ADC2 joystick and status LED responsive during Wi-Fi, reliably restores BLE after update checks, bounds persistent SW6115 bus faults, and preserves the explicit interrupted Twin DFU recovery marker.",
-  "assetName": "firmware-0.1.327.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.327/firmware-0.1.327.bin",
-  "sizeBytes": 2319680,
-  "sha256": "63bb04a94a696231e7c80b43e64a043b5df17de5e96ac2f2ba4b4208d1688a0e",
+  "version": "0.1.328",
+  "tag": "v0.1.328",
+  "releaseName": "Fire Tester firmware 0.1.328",
+  "notes": "Fire Tester 0.1.328 removes background sensor repair and shared-periphery power cycling. A new hardware error opens one top-down FIXING ERRORS sheet and runs one targeted non-blocking attempt; the same persistent errors then remain quiet until manual CHECK, while genuinely new errors can trigger a new attempt. The critical screen performs no checks, and repair no longer takes ownership of the joystick or status LEDs.",
+  "assetName": "firmware-0.1.328.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.328/firmware-0.1.328.bin",
+  "sizeBytes": 2320096,
+  "sha256": "7338756bbde75f7428daa3ef27ff4d482e56f4d85c107e2245c44c431b027cd9",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.327/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.328/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.327/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.328/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.327/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.328/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.327.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.327/firmware-0.1.327.bin",
-      "sizeBytes": 2319680,
-      "sha256": "63bb04a94a696231e7c80b43e64a043b5df17de5e96ac2f2ba4b4208d1688a0e"
+      "assetName": "firmware-0.1.328.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.328/firmware-0.1.328.bin",
+      "sizeBytes": 2320096,
+      "sha256": "7338756bbde75f7428daa3ef27ff4d482e56f4d85c107e2245c44c431b027cd9"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.327/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.328/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
