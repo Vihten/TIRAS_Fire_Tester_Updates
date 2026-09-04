@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.318",
-    "name": "Fire Tester firmware 0.1.318",
+    "tag": "v0.1.321",
+    "name": "Fire Tester firmware 0.1.321",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.318",
-  "tag": "v0.1.318",
-  "releaseName": "Fire Tester firmware 0.1.318",
-  "notes": "Fire Tester 0.1.318 improves effective charging from weak USB and Type-C DefaultPower sources by starting at the SW6115 0.5 A tier and increasing the charge-current limit only while input voltage remains stable above the charger cut-off margin.",
-  "assetName": "firmware-0.1.318.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.318/firmware-0.1.318.bin",
-  "sizeBytes": 2316784,
-  "sha256": "22971c684b4dc4bad1879fa997427b788619b7f2b3f66940a41ba023f02bb354",
+  "version": "0.1.321",
+  "tag": "v0.1.321",
+  "releaseName": "Fire Tester firmware 0.1.321",
+  "notes": "Fire Tester 0.1.321 lets capable 5 V chargers climb adaptively from 0.5 A to the highest stable SW6115 tier, restores the 4.3 V input threshold if the controller reloads its charge configuration, and prevents a background update check from keeping the device awake after charger loss.",
+  "assetName": "firmware-0.1.321.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.321/firmware-0.1.321.bin",
+  "sizeBytes": 2317040,
+  "sha256": "b6acb0ef8bc8fb58234557e71934bf30cf2a6a56590134d36b1f65952cc1d4a1",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.318/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.321/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.318/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.321/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.318/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.321/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.318.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.318/firmware-0.1.318.bin",
-      "sizeBytes": 2316784,
-      "sha256": "22971c684b4dc4bad1879fa997427b788619b7f2b3f66940a41ba023f02bb354"
+      "assetName": "firmware-0.1.321.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.321/firmware-0.1.321.bin",
+      "sizeBytes": 2317040,
+      "sha256": "b6acb0ef8bc8fb58234557e71934bf30cf2a6a56590134d36b1f65952cc1d4a1"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.318/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.321/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
