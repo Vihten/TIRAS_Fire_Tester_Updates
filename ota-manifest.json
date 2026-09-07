@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.335",
-    "name": "Fire Tester firmware 0.1.335",
+    "tag": "v0.1.336",
+    "name": "Fire Tester firmware 0.1.336",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.335",
-  "tag": "v0.1.335",
-  "releaseName": "Fire Tester firmware 0.1.335",
-  "notes": "Restore the original 220ms rolling digit and whole-number transition for real NTC temperature. New sensor samples do not restart an in-progress flip; the next flip targets the latest measured value without a backlog. Invalid readings display -- immediately. Preview rendering and cross-task resets preserve display state ownership. Host regression tests and ESP32-S3 build passed; physical animation feel still requires verification.",
-  "assetName": "firmware-0.1.335.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.335/firmware-0.1.335.bin",
-  "sizeBytes": 2328272,
-  "sha256": "e9e311abf9c79cd610e5c5613fdae7d2db5e5e002f359f1afdbd6978533947ce",
+  "version": "0.1.336",
+  "tag": "v0.1.336",
+  "releaseName": "Fire Tester firmware 0.1.336",
+  "notes": "Harden error handling: suppress notification, overtime and connection-loss tones during teaching; nonblocking CRT ranging and bounded IR failure recovery; display-owned notification source/input queues; cancel repairs when their visible sheet closes; preserve one-shot repair history across ignored faults and require successful persistence before automatic repair. Slice diagnostic I2C scans and reject timeout-based false presence evidence. Stop generation on critical-screen entry and prevent queued action replay. Host fault-injection regressions and ESP32-S3 build passed. Physical audio/input/fault acceptance remains required.",
+  "assetName": "firmware-0.1.336.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.336/firmware-0.1.336.bin",
+  "sizeBytes": 2331328,
+  "sha256": "f94abc511f7fa2e2415f1f35f4e6d8b70f34b29702aeac5b6436c0dbbaf02ebb",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.335/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.336/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.335/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.336/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.335/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.336/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.335.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.335/firmware-0.1.335.bin",
-      "sizeBytes": 2328272,
-      "sha256": "e9e311abf9c79cd610e5c5613fdae7d2db5e5e002f359f1afdbd6978533947ce"
+      "assetName": "firmware-0.1.336.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.336/firmware-0.1.336.bin",
+      "sizeBytes": 2331328,
+      "sha256": "f94abc511f7fa2e2415f1f35f4e6d8b70f34b29702aeac5b6436c0dbbaf02ebb"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.335/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.336/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
