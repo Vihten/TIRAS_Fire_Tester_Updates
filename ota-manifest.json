@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.340",
-    "name": "Fire Tester firmware 0.1.340",
+    "tag": "v0.1.341",
+    "name": "Fire Tester firmware 0.1.341",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.340",
-  "tag": "v0.1.340",
-  "releaseName": "Fire Tester firmware 0.1.340",
-  "notes": "USB discovery is limited to four seconds per physical Type-C attachment. A confirmed Manufacturing session or newly installed firmware keeps CDC open until cable removal. Unknown charger readings do not masquerade as disconnects. USB high-voltage protection applies in desktop and charging modes; active sessions prevent idle sleep. USB control does not blank or restart the display. Includes regression fixes for the v0.1.339 USB lifecycle. Use the updated Manufacturing application for post-reset runtime confirmation. Build and host tests passed; physical charging/display acceptance is pending.",
-  "assetName": "firmware-0.1.340.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.340/firmware-0.1.340.bin",
-  "sizeBytes": 2336848,
-  "sha256": "80e2d924a3bd269c44f59dbff0558b86ccedfd2c470a9e361f20f11554bd1406",
+  "version": "0.1.341",
+  "tag": "v0.1.341",
+  "releaseName": "Fire Tester firmware 0.1.341",
+  "notes": "Improves USB session retention using fresh Type-C, charger and VBUS evidence plus USB host presence. Confirmed Manufacturing sessions and post-update sessions remain open until confirmed cable removal; uncertain readings or USB suspension do not by themselves count as unplugging. Prevents a false detached charging-screen shutdown during an active USB session. Addresses the diag_uart stack-canary panic reproduced on v0.1.340 with command 00C6: increases diagnostic stack to 8192 bytes, removes nested SOC priming from that query, and reports minimum free stack. Existing high-voltage and forced-shutdown protections remain. PlatformIO build and host regression tests passed. Physical USB, charging/display and stack-watermark acceptance on v0.1.341 is still pending.",
+  "assetName": "firmware-0.1.341.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.341/firmware-0.1.341.bin",
+  "sizeBytes": 2337424,
+  "sha256": "6e66f4c5a2d5f388981f6c04bc0c48de48ba7b86040066ce0c6bc02f148ca0f9",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.341/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.341/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.341/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.340.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/firmware-0.1.340.bin",
-      "sizeBytes": 2336848,
-      "sha256": "80e2d924a3bd269c44f59dbff0558b86ccedfd2c470a9e361f20f11554bd1406"
+      "assetName": "firmware-0.1.341.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.341/firmware-0.1.341.bin",
+      "sizeBytes": 2337424,
+      "sha256": "6e66f4c5a2d5f388981f6c04bc0c48de48ba7b86040066ce0c6bc02f148ca0f9"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.341/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
