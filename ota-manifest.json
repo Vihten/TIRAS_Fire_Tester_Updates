@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.339",
-    "name": "Fire Tester firmware 0.1.339",
+    "tag": "v0.1.340",
+    "name": "Fire Tester firmware 0.1.340",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.339",
-  "tag": "v0.1.339",
-  "releaseName": "Fire Tester firmware 0.1.339",
-  "notes": "Keeps USB available for 10 seconds after boot so Manufacturing can claim the device before normal isolation. Valid TIRASINFO requests renew a bounded 30-second service hold. Normal isolation resumes after expiry; shutdown overrides all holds. Retains HWCDC driver resources during USB pad isolation to avoid concurrent Serial teardown. Build and host reliability tests passed; physical USB lifecycle verification remains pending.",
-  "assetName": "firmware-0.1.339.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.339/firmware-0.1.339.bin",
-  "sizeBytes": 2335936,
-  "sha256": "e947ae1e3dcbf37935977e25b59e0a6b7ced2054270bb527414063d51037bf6b",
+  "version": "0.1.340",
+  "tag": "v0.1.340",
+  "releaseName": "Fire Tester firmware 0.1.340",
+  "notes": "USB discovery is limited to four seconds per physical Type-C attachment. A confirmed Manufacturing session or newly installed firmware keeps CDC open until cable removal. Unknown charger readings do not masquerade as disconnects. USB high-voltage protection applies in desktop and charging modes; active sessions prevent idle sleep. USB control does not blank or restart the display. Includes regression fixes for the v0.1.339 USB lifecycle. Use the updated Manufacturing application for post-reset runtime confirmation. Build and host tests passed; physical charging/display acceptance is pending.",
+  "assetName": "firmware-0.1.340.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.340/firmware-0.1.340.bin",
+  "sizeBytes": 2336848,
+  "sha256": "80e2d924a3bd269c44f59dbff0558b86ccedfd2c470a9e361f20f11554bd1406",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.339/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.339/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.339/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.339.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.339/firmware-0.1.339.bin",
-      "sizeBytes": 2335936,
-      "sha256": "e947ae1e3dcbf37935977e25b59e0a6b7ced2054270bb527414063d51037bf6b"
+      "assetName": "firmware-0.1.340.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/firmware-0.1.340.bin",
+      "sizeBytes": 2336848,
+      "sha256": "80e2d924a3bd269c44f59dbff0558b86ccedfd2c470a9e361f20f11554bd1406"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.339/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.340/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
