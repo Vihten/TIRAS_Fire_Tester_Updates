@@ -13,7 +13,7 @@
   "notes": "Збереження дати виготовлення під час першого запису через TIRAS Service Manufacturing. Подальші оновлення не змінюють збережену дату. Збережено попередні виправлення USB та зарядки.",
   "assetName": "firmware-0.1.348.bin",
   "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.348/firmware-0.1.348.bin",
-  "sizeBytes": 2341232,
+  "sizeBytes": 2341248,
   "sha256": "ec264ddd1e39302b0e261f64f25c5079b648b2bc415fc5118b79a6df8756a75d",
   "flashPlan": [
     {
@@ -41,7 +41,7 @@
       "offset": "0x30000",
       "assetName": "firmware-0.1.348.bin",
       "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.348/firmware-0.1.348.bin",
-      "sizeBytes": 2341232,
+      "sizeBytes": 2341248,
       "sha256": "ec264ddd1e39302b0e261f64f25c5079b648b2bc415fc5118b79a6df8756a75d"
     },
     {
