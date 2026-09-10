@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.355",
-    "name": "Fire Tester firmware 0.1.355",
+    "tag": "v0.1.356",
+    "name": "Fire Tester firmware 0.1.356",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.355",
-  "tag": "v0.1.355",
-  "releaseName": "Fire Tester firmware 0.1.355",
-  "notes": "На зарядці USB відкривається для перевірки на одну секунду. Без отриманих серійних даних порт відключається: сама наявність USB-хоста або CDC-прапорець більше не утримують його відкритим. Для збереження сеансу програма на ПК має надіслати серійний запит у вікні перевірки; підтверджений сеанс зберігається до від'єднання кабелю. BIOS та захисне відключення USB збережені. Збірка і програмні тести пройдені; фізичний запуск QC/PD потребує перевірки на пристрої.",
-  "assetName": "firmware-0.1.355.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.355/firmware-0.1.355.bin",
-  "sizeBytes": 2350544,
-  "sha256": "405ba9c23a250b0c2388e038aa0e4533052ba5e75a2a6b827caeaf77ee3343e1",
+  "version": "0.1.356",
+  "tag": "v0.1.356",
+  "releaseName": "Fire Tester firmware 0.1.356",
+  "notes": "HW1: схема підтверджує SW6106, назва SW6115 у драйвері є історичною. Виправлено додаткове продовження USB-проби під час входу на екран зарядки: одна секунда рахується від фактичного відкриття USB, а прострочена проба закривається синхронно при вході. Збережено BIOS і підтверджені серійні сеанси. Додано журнал CP1 з читанням протоколу/дозволів SW6106 та фізичного стану USB. Налаштування швидкої зарядки не переписуються. Збірка і тести пройдені; фізичне відновлення швидкої зарядки ще не підтверджене.",
+  "assetName": "firmware-0.1.356.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.356/firmware-0.1.356.bin",
+  "sizeBytes": 2351088,
+  "sha256": "3d7f043f88182c40d0ddb70564688711b04b36ac5a64440896950c4a25d21b35",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.355/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.356/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.355/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.356/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.355/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.356/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.355.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.355/firmware-0.1.355.bin",
-      "sizeBytes": 2350544,
-      "sha256": "405ba9c23a250b0c2388e038aa0e4533052ba5e75a2a6b827caeaf77ee3343e1"
+      "assetName": "firmware-0.1.356.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.356/firmware-0.1.356.bin",
+      "sizeBytes": 2351088,
+      "sha256": "3d7f043f88182c40d0ddb70564688711b04b36ac5a64440896950c4a25d21b35"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.355/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.356/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
