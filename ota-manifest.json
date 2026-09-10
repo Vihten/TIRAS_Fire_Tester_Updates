@@ -1,53 +1,53 @@
 {
   "schema": 2,
   "release": {
-    "tag": "v0.1.360",
-    "name": "Fire Tester firmware 0.1.360",
+    "tag": "v0.1.361",
+    "name": "Fire Tester firmware 0.1.361",
     "components": [
       "fireTester"
     ]
   },
-  "version": "0.1.360",
-  "tag": "v0.1.360",
-  "releaseName": "Fire Tester firmware 0.1.360",
-  "notes": "На екрані зарядки прибрано автоматичне відкривання USB за таймером. Свайп вниз відкриває порт без короткого тайм-ауту; повернення закриває його лише за відсутності встановленого сеансу. Отримані від комп'ютера дані утримують сеанс до від'єднання кабелю. Після запуску продовження дротового сеансу визначається за реальними USB-кадрами, а не лише за зміною версії. Звичайне вікно виявлення збільшено до 30 секунд. Збірка та регресійні тести пройдені; фізична перевірка QC/PD і повторного підключення після прошивання ще потрібна.",
-  "assetName": "firmware-0.1.360.bin",
-  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.360/firmware-0.1.360.bin",
-  "sizeBytes": 2352048,
-  "sha256": "676ec12f3a8e2073d5df8c9a76c4abd2a2cf1a607bb5db8a2a58b01ba79dd9c2",
+  "version": "0.1.361",
+  "tag": "v0.1.361",
+  "releaseName": "Fire Tester firmware 0.1.361",
+  "notes": "На зарядці USB залишається закритим до свайпу вниз. Прибрано автоматичне повернення з екрана очікування оновлення через таймер або коливання стану зарядки. Дозволений дротовий сеанс зберігається окремою одноразовою позначкою та продовжується після ROM-прошивання лише за наявності реальних USB-кадрів від ПК; тип перезапуску та зміна версії самі по собі не відкривають порт. Підтверджене від'єднання скасовує старий сеанс навіть при швидкому переставленні кабелю. Відновлено одноразову LOW/INPUT передачу USB-ліній контролеру зарядки, без знищення ресурсів HWCDC. Після першого переходу зі старої прошивки потрібен один свайп для створення нової позначки сеансу. Збірка та регресійні тести пройдені. На фізичному пристрої повторний запис тієї самої версії перевірений за хешем; після перезапуску завантажувачем пристрій підтвердив версію за nonce-запитом через 0,44 с без нового свайпу. Фізичне погодження QC/PD 9/12 В ще потребує перевірки.",
+  "assetName": "firmware-0.1.361.bin",
+  "downloadUrl": "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.361/firmware-0.1.361.bin",
+  "sizeBytes": 2352944,
+  "sha256": "c78090fc0547b1eb5d456cc3851720baf0c1ecabdf653f0dcea35e325591bb6f",
   "flashPlan": [
     {
       "offset": "0x0",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.360/bootloader.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.361/bootloader.bin",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
     },
     {
       "offset": "0x8000",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.360/partitions.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.361/partitions.bin",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c"
     },
     {
       "offset": "0x2E000",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.360/boot_app0.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.361/boot_app0.bin",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
     },
     {
       "offset": "0x30000",
-      "assetName": "firmware-0.1.360.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.360/firmware-0.1.360.bin",
-      "sizeBytes": 2352048,
-      "sha256": "676ec12f3a8e2073d5df8c9a76c4abd2a2cf1a607bb5db8a2a58b01ba79dd9c2"
+      "assetName": "firmware-0.1.361.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.361/firmware-0.1.361.bin",
+      "sizeBytes": 2352944,
+      "sha256": "c78090fc0547b1eb5d456cc3851720baf0c1ecabdf653f0dcea35e325591bb6f"
     },
     {
       "offset": "0xC90000",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.360/spiffs.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.361/spiffs.bin",
       "sizeBytes": 3538944,
       "sha256": "1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138"
     }
