@@ -1,55 +1,55 @@
 {
-    "assetName":  "firmware-0.1.380.bin",
-    "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.380/firmware-0.1.380.bin",
+    "assetName":  "firmware-0.1.381.bin",
+    "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.381/firmware-0.1.381.bin",
     "flashPlan":  [
                       {
                           "offset":  "0x0",
                           "sizeBytes":  15104,
                           "sha256":  "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
                           "assetName":  "bootloader.bin",
-                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.380/bootloader.bin"
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.381/bootloader.bin"
                       },
                       {
                           "offset":  "0x8000",
                           "sizeBytes":  3072,
                           "sha256":  "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
                           "assetName":  "partitions.bin",
-                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.380/partitions.bin"
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.381/partitions.bin"
                       },
                       {
                           "offset":  "0x2E000",
                           "sizeBytes":  8192,
                           "sha256":  "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
                           "assetName":  "boot_app0.bin",
-                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.380/boot_app0.bin"
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.381/boot_app0.bin"
                       },
                       {
                           "offset":  "0x30000",
-                          "sizeBytes":  2360336,
-                          "sha256":  "6a00692a1fa235eb58be63ac58d828831bea512e8db65213609548e999b737e4",
-                          "assetName":  "firmware-0.1.380.bin",
-                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.380/firmware-0.1.380.bin"
+                          "sizeBytes":  2360544,
+                          "sha256":  "0c031a6edfe4c62e918bd6182f2d313b3adccd64ca745c45fc951e7f84253c9f",
+                          "assetName":  "firmware-0.1.381.bin",
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.381/firmware-0.1.381.bin"
                       },
                       {
                           "offset":  "0xC90000",
                           "sizeBytes":  3538944,
                           "sha256":  "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
                           "assetName":  "spiffs.bin",
-                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.380/spiffs.bin"
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.381/spiffs.bin"
                       }
                   ],
     "release":  {
                     "components":  [
                                        "fireTester"
                                    ],
-                    "tag":  "v0.1.380",
-                    "name":  "Fire Tester firmware 0.1.380"
+                    "tag":  "v0.1.381",
+                    "name":  "Fire Tester firmware 0.1.381"
                 },
-    "version":  "0.1.380",
-    "sizeBytes":  2360336,
-    "notes":  "Automatic BIOS is exclusive to the one-shot wired Manufacturing SPIFFS receipt; phone BLE OTA, Wi-Fi OTA and other sources start normally.",
-    "sha256":  "6a00692a1fa235eb58be63ac58d828831bea512e8db65213609548e999b737e4",
-    "tag":  "v0.1.380",
+    "version":  "0.1.381",
+    "sizeBytes":  2360544,
+    "notes":  "Stabilized charge screen and LED visuals during transient SW6115 controller resets or I2C status gaps.",
+    "sha256":  "0c031a6edfe4c62e918bd6182f2d313b3adccd64ca745c45fc951e7f84253c9f",
+    "tag":  "v0.1.381",
     "schema":  2,
-    "releaseName":  "Fire Tester firmware 0.1.380"
+    "releaseName":  "Fire Tester firmware 0.1.381"
 }
