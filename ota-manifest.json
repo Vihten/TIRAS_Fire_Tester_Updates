@@ -1,6 +1,6 @@
 {
     "assetName":  "firmware-0.1.380.bin",
-    "downloadUrl":  "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.380/firmware-0.1.380.bin",
+    "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.380/firmware-0.1.380.bin",
     "flashPlan":  [
                       {
                           "offset":  "0x0",
