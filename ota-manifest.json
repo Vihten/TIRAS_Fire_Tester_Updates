@@ -1,1 +1,55 @@
-{"assetName":"firmware-0.1.378.bin","downloadUrl":"https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.378/firmware-0.1.378.bin","flashPlan":[{"offset":"0x0","sizeBytes":15104,"sha256":"2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363","assetName":"bootloader.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.378/bootloader.bin"},{"offset":"0x8000","sizeBytes":3072,"sha256":"d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c","assetName":"partitions.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.378/partitions.bin"},{"offset":"0x2E000","sizeBytes":8192,"sha256":"f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0","assetName":"boot_app0.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.378/boot_app0.bin"},{"offset":"0x30000","sizeBytes":2360112,"sha256":"e10155b0e7c1c2a10eeed07965308cba1763e0f4a2baff5d0896e1a2fb20d104","assetName":"firmware-0.1.378.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.378/firmware-0.1.378.bin"},{"offset":"0xC90000","sizeBytes":3538944,"sha256":"1c17191cdf6e3d0e95454031c4c1347ca617a334625165b61f01202361fdd138","assetName":"spiffs.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.378/spiffs.bin"}],"release":{"components":["fireTester"],"name":"Fire Tester firmware 0.1.378","tag":"v0.1.378"},"version":"0.1.378","notes":"Wired Manufacturing updates boot into BIOS; phone OTA boots normally.","sha256":"e10155b0e7c1c2a10eeed07965308cba1763e0f4a2baff5d0896e1a2fb20d104","tag":"v0.1.378","schema":2,"sizeBytes":2360112,"releaseName":"Fire Tester firmware 0.1.378"}
+{
+    "assetName":  "firmware-0.1.379.bin",
+    "downloadUrl":  "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.379/firmware-0.1.379.bin",
+    "flashPlan":  [
+                      {
+                          "offset":  "0x0",
+                          "sizeBytes":  15104,
+                          "sha256":  "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
+                          "assetName":  "bootloader.bin",
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.379/bootloader.bin"
+                      },
+                      {
+                          "offset":  "0x8000",
+                          "sizeBytes":  3072,
+                          "sha256":  "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
+                          "assetName":  "partitions.bin",
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.379/partitions.bin"
+                      },
+                      {
+                          "offset":  "0x2E000",
+                          "sizeBytes":  8192,
+                          "sha256":  "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+                          "assetName":  "boot_app0.bin",
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.379/boot_app0.bin"
+                      },
+                      {
+                          "offset":  "0x30000",
+                          "sizeBytes":  2360672,
+                          "sha256":  "31e02ef16fa800c706873170a8fba9568fd5ebdf7db42db14a4f4114fface268",
+                          "assetName":  "firmware-0.1.379.bin",
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.379/firmware-0.1.379.bin"
+                      },
+                      {
+                          "offset":  "0xC90000",
+                          "sizeBytes":  3538944,
+                          "sha256":  "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
+                          "assetName":  "spiffs.bin",
+                          "downloadUrl":  "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.379/spiffs.bin"
+                      }
+                  ],
+    "release":  {
+                    "components":  [
+                                       "fireTester"
+                                   ],
+                    "tag":  "v0.1.379",
+                    "name":  "Fire Tester firmware 0.1.379"
+                },
+    "version":  "0.1.379",
+    "sizeBytes":  2360672,
+    "notes":  "One-shot wired filesystem BIOS receipt; normal phone BLE OTA startup.",
+    "sha256":  "31e02ef16fa800c706873170a8fba9568fd5ebdf7db42db14a4f4114fface268",
+    "tag":  "v0.1.379",
+    "schema":  2,
+    "releaseName":  "Fire Tester firmware 0.1.379"
+}
