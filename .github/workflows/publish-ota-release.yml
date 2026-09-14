@@ -43,12 +43,12 @@ jobs:
           )
 
           if gh release view "${release_tag}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
-            gh release upload "${release_tag}" "${asset_dir}/${asset_name}" "${checksums}" \
+            gh release upload "${release_tag}" "${asset_dir}"/*.bin "${checksums}" \
               --repo "${GITHUB_REPOSITORY}" --clobber
             gh release edit "${release_tag}" --repo "${GITHUB_REPOSITORY}" \
               --latest --title "${release_name}" --notes "${release_notes}"
           else
-            gh release create "${release_tag}" "${asset_dir}/${asset_name}" "${checksums}" \
+            gh release create "${release_tag}" "${asset_dir}"/*.bin "${checksums}" \
               --repo "${GITHUB_REPOSITORY}" --verify-tag --latest \
               --title "${release_name}" --notes "${release_notes}"
           fi
