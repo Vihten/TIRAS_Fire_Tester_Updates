@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.389.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.389/firmware-0.1.389.bin",
+  "assetName": "firmware-0.1.390.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.390/firmware-0.1.390.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.389/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.390/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.389/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.390/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.389/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.390/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2383728,
-      "sha256": "ebc61dbbd88ba6b0571c0f259512f4b5f8947ba40fdec476198b096e9dc548fa",
-      "assetName": "firmware-0.1.389.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.389/firmware-0.1.389.bin"
+      "sizeBytes": 2384496,
+      "sha256": "8dd4bc99d2cf6e409dc8e51cc1d98e8d83d3d33959532a911a03bc79dd735d61",
+      "assetName": "firmware-0.1.390.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.390/firmware-0.1.390.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.389/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.390/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.389",
-    "name": "Fire Tester firmware 0.1.389"
+    "tag": "v0.1.390",
+    "name": "Fire Tester firmware 0.1.390"
   },
-  "version": "0.1.389",
-  "sizeBytes": 2383728,
-  "notes": "Add guided joystick diagnostics and improve BIOS cable-detach handling. Preserve current charging, USB service, and reliability improvements.",
-  "sha256": "ebc61dbbd88ba6b0571c0f259512f4b5f8947ba40fdec476198b096e9dc548fa",
-  "tag": "v0.1.389",
+  "version": "0.1.390",
+  "sizeBytes": 2384496,
+  "notes": "Fix starting guided joystick diagnostics while the device is charging. Wake into diagnostics without restarting initialized hardware, while preserving generation, update, and radio safety checks.",
+  "sha256": "8dd4bc99d2cf6e409dc8e51cc1d98e8d83d3d33959532a911a03bc79dd735d61",
+  "tag": "v0.1.390",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.389"
+  "releaseName": "Fire Tester firmware 0.1.390"
 }
