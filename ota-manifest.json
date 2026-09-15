@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.385.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.385/firmware-0.1.385.bin",
+  "assetName": "firmware-0.1.386.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.386/firmware-0.1.386.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.385/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.386/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.385/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.386/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.385/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.386/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2377984,
-      "sha256": "429fe84cac3a90edaab54f52a78d8818343605d59b6606ddf4aab463b191c3d0",
-      "assetName": "firmware-0.1.385.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.385/firmware-0.1.385.bin"
+      "sizeBytes": 2378224,
+      "sha256": "eb1a2b7b90cd03132a8f90385da36f9fa8e9a96f49b2d06c9155a9ebebb6f922",
+      "assetName": "firmware-0.1.386.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.386/firmware-0.1.386.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.385/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.386/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.385",
-    "name": "Fire Tester firmware 0.1.385"
+    "tag": "v0.1.386",
+    "name": "Fire Tester firmware 0.1.386"
   },
-  "version": "0.1.385",
-  "sizeBytes": 2377984,
-  "notes": "Smoother subpixel Boot Mode cable motion; preserve and fade its frame on charge-cable detach. Joystick telemetry is emitted only in ready BIOS, including single-sample requests. Retains validated USB updates, manufacturing date and wired-only BIOS startup.",
-  "sha256": "429fe84cac3a90edaab54f52a78d8818343605d59b6606ddf4aab463b191c3d0",
-  "tag": "v0.1.385",
+  "version": "0.1.386",
+  "sizeBytes": 2378224,
+  "notes": "Faster wired USB updates with negotiated 4096-byte blocks and bounded burst reception. Existing 512-byte clients remain compatible. Progress uses confirmed written bytes; SHA-256/readback checks, manufacturing data and wired-only BIOS startup are preserved.",
+  "sha256": "eb1a2b7b90cd03132a8f90385da36f9fa8e9a96f49b2d06c9155a9ebebb6f922",
+  "tag": "v0.1.386",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.385"
+  "releaseName": "Fire Tester firmware 0.1.386"
 }
