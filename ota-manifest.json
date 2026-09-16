@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.393.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.393/firmware-0.1.393.bin",
+  "assetName": "firmware-0.1.394.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.394/firmware-0.1.394.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.393/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.394/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.393/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.394/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.393/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.394/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2387536,
-      "sha256": "8852a6d6afaf34f5e7a03c124bcb5a033d3b8faa26e89c0877868e4ce542cf31",
-      "assetName": "firmware-0.1.393.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.393/firmware-0.1.393.bin"
+      "sizeBytes": 2397488,
+      "sha256": "84aba46e9aefac15c57fdbcc811879d5726f5058dd49c4eb1fb29fe85656489e",
+      "assetName": "firmware-0.1.394.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.394/firmware-0.1.394.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.393/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.394/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.393",
-    "name": "Fire Tester firmware 0.1.393"
+    "tag": "v0.1.394",
+    "name": "Fire Tester firmware 0.1.394"
   },
-  "version": "0.1.393",
-  "sizeBytes": 2387536,
-  "notes": "Boot Mode: renderer-owned continuous cable animation, previous-screen fade through black into the service screen, differential display updates and motion diagnostics. Preserve USB throughput and Bluetooth internal-memory safeguards.",
-  "sha256": "8852a6d6afaf34f5e7a03c124bcb5a033d3b8faa26e89c0877868e4ce542cf31",
-  "tag": "v0.1.393",
+  "version": "0.1.394",
+  "sizeBytes": 2397488,
+  "notes": "Stabilize charge/update LED frames and terminal shutdown; fix CRT ranging starvation behind the primary sensor, distinguish deferred discovery from missing hardware, and make power-button startup timing consistent. Preserve wired Manufacturing BIOS routing, phone OTA normal boot, Bluetooth memory safeguards and manufacturing data.",
+  "sha256": "84aba46e9aefac15c57fdbcc811879d5726f5058dd49c4eb1fb29fe85656489e",
+  "tag": "v0.1.394",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.393"
+  "releaseName": "Fire Tester firmware 0.1.394"
 }
