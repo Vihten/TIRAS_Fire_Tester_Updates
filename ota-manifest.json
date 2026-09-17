@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.399.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.399/firmware-0.1.399.bin",
+  "assetName": "firmware-0.1.401.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.401/firmware-0.1.401.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.399/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.401/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.399/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.401/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.399/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.401/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2401072,
-      "sha256": "c0927e2ed865a4a7f1337b0a66a1e80fc92e52f5e99fb61f3e182b146e805703",
-      "assetName": "firmware-0.1.399.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.399/firmware-0.1.399.bin"
+      "sizeBytes": 2405248,
+      "sha256": "4fa3e64b0e3ada164599396567eecf6cff41ff5ff551360f501a09a78ffa16bd",
+      "assetName": "firmware-0.1.401.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.401/firmware-0.1.401.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.399/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.401/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.399",
-    "name": "Fire Tester firmware 0.1.399"
+    "tag": "v0.1.401",
+    "name": "Fire Tester firmware 0.1.401"
   },
-  "version": "0.1.399",
-  "sizeBytes": 2401072,
-  "notes": "Fix BIOS shutdown on confirmed USB cable detach and power-button shutdown with permanent serial debugging enabled. Serial debugging continues to inhibit idle sleep; update-write guards and cable reconnect wake handling are preserved. BIOS long-press shutdown waits for a debounced button release before arming wakeup, preventing immediate re-wake from the same held button.",
-  "sha256": "c0927e2ed865a4a7f1337b0a66a1e80fc92e52f5e99fb61f3e182b146e805703",
-  "tag": "v0.1.399",
+  "version": "0.1.401",
+  "sizeBytes": 2405248,
+  "notes": "Restore startup sound and remove the pre-star freeze. Improve startup smoothness with work-accounted frame pacing, batched DMA, exact span rendering and a continuous logo stretch transition. Drive startup LEDs independently of synchronous sensor initialization, starting brightness at zero. Fade the screen before successful USB/BLE/Wi-Fi update restart. Preserve mute preferences, readiness safety gates, Manufacturing USB BIOS routing and normal phone OTA startup.",
+  "sha256": "4fa3e64b0e3ada164599396567eecf6cff41ff5ff551360f501a09a78ffa16bd",
+  "tag": "v0.1.401",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.399"
+  "releaseName": "Fire Tester firmware 0.1.401"
 }
