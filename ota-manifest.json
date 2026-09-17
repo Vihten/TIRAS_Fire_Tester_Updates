@@ -1,55 +1,56 @@
 {
-  "assetName": "firmware-0.1.402.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.402/firmware-0.1.402.bin",
+  "assetName": "firmware-0.1.403.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.403/firmware-0.1.403.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.402/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.403/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.402/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.403/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.402/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.403/boot_app0.bin"
     },
     {
       "offset": "0x30000",
       "sizeBytes": 2410272,
       "sha256": "c27e7b87d057e8a0fe65f2bc2c61d345c11262b0ac61e757463405b877a43fc1",
-      "assetName": "firmware-0.1.402.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.402/firmware-0.1.402.bin"
+      "assetName": "firmware-0.1.403.bin",
+      "sha256": "ff0132b7103e5e55bac1d82228399513d1e9c7a3e734ffce0e469752c3d3f9b5",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.403/firmware-0.1.403.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.402/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.403/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.402",
-    "name": "Fire Tester firmware 0.1.402"
+    "tag": "v0.1.403",
+    "name": "Fire Tester firmware 0.1.403"
   },
-  "version": "0.1.402",
+  "version": "0.1.403",
   "sizeBytes": 2410272,
-  "notes": "Fix startup hanging after the rotating star: the preview shares CPU time with setup, then returns to its normal display priority only after required workers are ready. Keep SERIAL MOD awake through the final boot route, preventing a released startup button from leaving the UI logically asleep. Start the safety guardian before application initialization, cover missing first heartbeats, and retain fault notes without blocking reset on USB/NVS. Add bounded recovery diagnostics and emergency ROM USB recovery for a schedulable MCU. Preserve Manufacturing USB BIOS routing and normal phone OTA boot.",
-  "sha256": "c27e7b87d057e8a0fe65f2bc2c61d345c11262b0ac61e757463405b877a43fc1",
-  "tag": "v0.1.402",
+  "notes": "Fix startup hanging after the rotating star and preserve SERIAL MOD wake routing. Add a verified runtime emergency ROM USB recovery gesture: release both controls, then hold only the joystick button for 8 seconds. Power plus joystick remains accepted; joystick-only avoids normal power-button shutdown paths. Preserve Manufacturing USB BIOS routing and normal phone OTA boot.",
+  "sha256": "ff0132b7103e5e55bac1d82228399513d1e9c7a3e734ffce0e469752c3d3f9b5",
+  "tag": "v0.1.403",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.402"
+  "releaseName": "Fire Tester firmware 0.1.403"
 }
