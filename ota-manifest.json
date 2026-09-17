@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.396.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.396/firmware-0.1.396.bin",
+  "assetName": "firmware-0.1.397.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.397/firmware-0.1.397.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.396/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.397/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.396/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.397/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.396/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.397/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2400864,
-      "sha256": "930e00b8fe169b02b8a70519434eb93908aa11ef355417b321fbdca081a72237",
-      "assetName": "firmware-0.1.396.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.396/firmware-0.1.396.bin"
+      "sizeBytes": 2400944,
+      "sha256": "cad1e6ef9cf50e7f89a7f9d20fe1e00d5b811ff59429cbd18feb25c4c86a3443",
+      "assetName": "firmware-0.1.397.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.397/firmware-0.1.397.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.396/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.397/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.396",
-    "name": "Fire Tester firmware 0.1.396"
+    "tag": "v0.1.397",
+    "name": "Fire Tester firmware 0.1.397"
   },
-  "version": "0.1.396",
-  "sizeBytes": 2400864,
-  "notes": "Fix battery SOC freezing during high-current generation: retain sag protection while counting measured net discharge, preserve fractional SOC across sessions, validate rested corrections and reject invalid/saturated-current gaps. Correct SW6106 high-voltage current telemetry, read-only battery type and register masks. Charger limits, hardware protections, manufacturing data and transport-specific boot behavior are preserved.",
-  "sha256": "930e00b8fe169b02b8a70519434eb93908aa11ef355417b321fbdca081a72237",
-  "tag": "v0.1.396",
+  "version": "0.1.397",
+  "sizeBytes": 2400944,
+  "notes": "Hide the cooler animation during button/manual smoke pauses when the cooler is not requested. Preserve sensor-driven plume purge and automatic Cooling handoff motion. Discard cancelled automatic purge transitions without blocking normal return. Physical output control and smoke cycle timing are unchanged.",
+  "sha256": "cad1e6ef9cf50e7f89a7f9d20fe1e00d5b811ff59429cbd18feb25c4c86a3443",
+  "tag": "v0.1.397",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.396"
+  "releaseName": "Fire Tester firmware 0.1.397"
 }
