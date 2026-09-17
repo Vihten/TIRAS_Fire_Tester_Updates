@@ -1,20 +1,20 @@
 {
-  "assetName": "firmware-0.1.408.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.408/firmware-0.1.408.bin",
+  "assetName": "firmware-0.1.409.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.409/firmware-0.1.409.bin",
   "flashPlan": [
-    {"offset":"0x0","sizeBytes":15104,"sha256":"2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363","assetName":"bootloader.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.408/bootloader.bin"},
-    {"offset":"0x8000","sizeBytes":3072,"sha256":"d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c","assetName":"partitions.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.408/partitions.bin"},
-    {"offset":"0x2E000","sizeBytes":8192,"sha256":"f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0","assetName":"boot_app0.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.408/boot_app0.bin"},
-    {"offset":"0x30000","sizeBytes":2409536,"sha256":"c115a216c63540e8bfaed10e4506e8e7b5b392719241136c6c7de2d511760948","assetName":"firmware-0.1.408.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.408/firmware-0.1.408.bin"},
-    {"offset":"0xC90000","sizeBytes":3538944,"sha256":"ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8","assetName":"spiffs.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.408/spiffs.bin"}
+    {"offset":"0x0","sizeBytes":15104,"sha256":"2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363","assetName":"bootloader.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.409/bootloader.bin"},
+    {"offset":"0x8000","sizeBytes":3072,"sha256":"d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c","assetName":"partitions.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.409/partitions.bin"},
+    {"offset":"0x2E000","sizeBytes":8192,"sha256":"f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0","assetName":"boot_app0.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.409/boot_app0.bin"},
+    {"offset":"0x30000","sizeBytes":2409536,"sha256":"c2c69ef851aaa058e96f747fb764c1065e749befa77aca9f06eddc9a7da474e5","assetName":"firmware-0.1.409.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.409/firmware-0.1.409.bin"},
+    {"offset":"0xC90000","sizeBytes":3538944,"sha256":"ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8","assetName":"spiffs.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.409/spiffs.bin"}
   ],
-  "release":{"components":["fireTester"],"tag":"v0.1.408","name":"Fire Tester firmware 0.1.408"},
-  "version":"0.1.408",
+  "release":{"components":["fireTester"],"tag":"v0.1.409","name":"Fire Tester firmware 0.1.409"},
+  "version":"0.1.409",
   "sizeBytes":2409536,
   "notes":"Keep startup responsive: continuous sparkle phase during handoff, two-pixel left shift, and no overlapping system preloader in Recovery.",
-  "sha256":"c115a216c63540e8bfaed10e4506e8e7b5b392719241136c6c7de2d511760948",
-  "tag":"v0.1.408",
+  "sha256":"c2c69ef851aaa058e96f747fb764c1065e749befa77aca9f06eddc9a7da474e5",
+  "tag":"v0.1.409",
   "schema":2,
-  "releaseName":"Fire Tester firmware 0.1.408"
+  "releaseName":"Fire Tester firmware 0.1.409"
 }
 
