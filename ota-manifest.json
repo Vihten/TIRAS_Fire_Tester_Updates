@@ -1,19 +1,19 @@
 {
-  "assetName": "firmware-0.1.404.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.404/firmware-0.1.404.bin",
+  "assetName": "firmware-0.1.405.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.405/firmware-0.1.405.bin",
   "flashPlan": [
-    { "offset": "0x0", "sizeBytes": 15104, "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363", "assetName": "bootloader.bin", "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.404/bootloader.bin" },
-    { "offset": "0x8000", "sizeBytes": 3072, "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c", "assetName": "partitions.bin", "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.404/partitions.bin" },
-    { "offset": "0x2E000", "sizeBytes": 8192, "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0", "assetName": "boot_app0.bin", "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.404/boot_app0.bin" },
-    { "offset": "0x30000", "sizeBytes": 2410368, "sha256": "94ee359357eaa93024955265585decbded7179d27cb4c045a7abadf2d4b78b07", "assetName": "firmware-0.1.404.bin", "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.404/firmware-0.1.404.bin" },
-    { "offset": "0xC90000", "sizeBytes": 3538944, "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8", "assetName": "spiffs.bin", "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.404/spiffs.bin" }
+    {"offset":"0x0","sizeBytes":15104,"sha256":"2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363","assetName":"bootloader.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.405/bootloader.bin"},
+    {"offset":"0x8000","sizeBytes":3072,"sha256":"d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c","assetName":"partitions.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.405/partitions.bin"},
+    {"offset":"0x2E000","sizeBytes":8192,"sha256":"f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0","assetName":"boot_app0.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.405/boot_app0.bin"},
+    {"offset":"0x30000","sizeBytes":2409424,"sha256":"db7670ed34123f13087aac7ec0291050c39f0cd2d92f4453c3271cafdd76adfd","assetName":"firmware-0.1.405.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.405/firmware-0.1.405.bin"},
+    {"offset":"0xC90000","sizeBytes":3538944,"sha256":"ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8","assetName":"spiffs.bin","downloadUrl":"https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.405/spiffs.bin"}
   ],
-  "release": { "components": ["fireTester"], "tag": "v0.1.404", "name": "Fire Tester firmware 0.1.404" },
-  "version": "0.1.404",
-  "sizeBytes": 2410368,
-  "notes": "Require a deliberate emergency ROM USB recovery gesture: release both controls, hold the joystick switch for 20 seconds, and make exactly three complete power-button presses. Suppress ordinary power handling during the candidate gesture. ROM exit remains a hardware reset, power cycle, or flashing-tool application start.",
-  "sha256": "94ee359357eaa93024955265585decbded7179d27cb4c045a7abadf2d4b78b07",
-  "tag": "v0.1.404",
-  "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.404"
+  "release":{"components":["fireTester"],"tag":"v0.1.405","name":"Fire Tester firmware 0.1.405"},
+  "version":"0.1.405",
+  "sizeBytes":2409424,
+  "notes":"Replace ROM-only emergency entry with firmware Recovery: Manufacturing USB flashing, Android-style Reboot system, and two-step Wipe data that preserves manufacturing date. Enter only after 20-second joystick hold and exactly three power-button presses.",
+  "sha256":"db7670ed34123f13087aac7ec0291050c39f0cd2d92f4453c3271cafdd76adfd",
+  "tag":"v0.1.405",
+  "schema":2,
+  "releaseName":"Fire Tester firmware 0.1.405"
 }
