@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.414.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/firmware-0.1.414.bin",
+  "assetName": "firmware-0.1.415.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.415/firmware-0.1.415.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.415/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.415/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.415/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2410048,
-      "sha256": "2ca883391f9c59c26c90077bd8a1f8bd3ef0f0541639f90fd5d739b2b541f951",
-      "assetName": "firmware-0.1.414.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/firmware-0.1.414.bin"
+      "sizeBytes": 2410080,
+      "sha256": "647a2b2996f3064a3eb54c72612fcf1aeb0584bd428a2b9a90e26221f3304329",
+      "assetName": "firmware-0.1.415.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.415/firmware-0.1.415.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.415/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.414",
-    "name": "Fire Tester firmware 0.1.414"
+    "tag": "v0.1.415",
+    "name": "Fire Tester firmware 0.1.415"
   },
-  "version": "0.1.414",
-  "sizeBytes": 2410048,
-  "notes": "Reduce startup SPI transfers with exact dirty bounds, service audio between DMA chunks and preserve PWM timing within each note. Start generation transition timing after frame preparation and avoid saving unchanged mode statistics. Host regressions and PlatformIO build passed; physical animation/audio and BIOS acceptance remain unverified.",
-  "sha256": "2ca883391f9c59c26c90077bd8a1f8bd3ef0f0541639f90fd5d739b2b541f951",
-  "tag": "v0.1.414",
+  "version": "0.1.415",
+  "sizeBytes": 2410080,
+  "notes": "Start background setup on the first EXT0 button press while the panel stays dark until the existing 500 ms hold is confirmed. The startup animation then begins after preload without competing with the initial service work. Host regressions and PlatformIO build passed; physical button, animation, audio, BIOS and charge-only acceptance remain unverified.",
+  "sha256": "647a2b2996f3064a3eb54c72612fcf1aeb0584bd428a2b9a90e26221f3304329",
+  "tag": "v0.1.415",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.414"
+  "releaseName": "Fire Tester firmware 0.1.415"
 }
