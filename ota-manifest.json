@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.413.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.413/firmware-0.1.413.bin",
+  "assetName": "firmware-0.1.414.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/firmware-0.1.414.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.413/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.413/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.413/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2409600,
-      "sha256": "da43807b76c5757093f93995e6f88b5093c911e6a89a08628cf1583fd2159b9a",
-      "assetName": "firmware-0.1.413.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.413/firmware-0.1.413.bin"
+      "sizeBytes": 2410048,
+      "sha256": "2ca883391f9c59c26c90077bd8a1f8bd3ef0f0541639f90fd5d739b2b541f951",
+      "assetName": "firmware-0.1.414.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/firmware-0.1.414.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.413/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.414/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.413",
-    "name": "Fire Tester firmware 0.1.413"
+    "tag": "v0.1.414",
+    "name": "Fire Tester firmware 0.1.414"
   },
-  "version": "0.1.413",
-  "sizeBytes": 2409600,
-  "notes": "Reduce startup contention by separating setup on core 0 from display rendering on core 1. Shorten logo/star holds by 600 ms while preserving continuous rotation and the 430 ms fade. Build and host regression tests passed; physical startup timing, BIOS and charge-only acceptance remain unverified.",
-  "sha256": "da43807b76c5757093f93995e6f88b5093c911e6a89a08628cf1583fd2159b9a",
-  "tag": "v0.1.413",
+  "version": "0.1.414",
+  "sizeBytes": 2410048,
+  "notes": "Reduce startup SPI transfers with exact dirty bounds, service audio between DMA chunks and preserve PWM timing within each note. Start generation transition timing after frame preparation and avoid saving unchanged mode statistics. Host regressions and PlatformIO build passed; physical animation/audio and BIOS acceptance remain unverified.",
+  "sha256": "2ca883391f9c59c26c90077bd8a1f8bd3ef0f0541639f90fd5d739b2b541f951",
+  "tag": "v0.1.414",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.413"
+  "releaseName": "Fire Tester firmware 0.1.414"
 }
