@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.416.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.416/firmware-0.1.416.bin",
+  "assetName": "firmware-0.1.417.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.417/firmware-0.1.417.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.416/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.417/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.416/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.417/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.416/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.417/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2410000,
-      "sha256": "7cbd6f3c3926546f30cf9c1d5ff8e5908831a4c3869768c5f99aca2d29a59389",
-      "assetName": "firmware-0.1.416.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.416/firmware-0.1.416.bin"
+      "sizeBytes": 2410016,
+      "sha256": "4d6ec7cfa9ff645d081c15b65beaf8f6d0bcfd6a51b92cd72b09ba80beaa60be",
+      "assetName": "firmware-0.1.417.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.417/firmware-0.1.417.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.416/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.417/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.416",
-    "name": "Fire Tester firmware 0.1.416"
+    "tag": "v0.1.417",
+    "name": "Fire Tester firmware 0.1.417"
   },
-  "version": "0.1.416",
-  "sizeBytes": 2410000,
-  "notes": "Unify logo and star tint/fade during startup. Keep preallocated generation-return UI resources and desktop transition cache resident, avoiding allocator/cache churn and temporary desktop FPS drops. Host regressions and PlatformIO build passed; physical visual acceptance remains required.",
-  "sha256": "7cbd6f3c3926546f30cf9c1d5ff8e5908831a4c3869768c5f99aca2d29a59389",
-  "tag": "v0.1.416",
+  "version": "0.1.417",
+  "sizeBytes": 2410016,
+  "notes": "Release full-screen generation snapshots after the terminal return frame, while preserving the desktop cache. This restores PSRAM headroom for Smoke, Temperature and Cooling generation rendering without rebuilding the desktop. Host regressions and PlatformIO build passed; physical visual acceptance remains required.",
+  "sha256": "4d6ec7cfa9ff645d081c15b65beaf8f6d0bcfd6a51b92cd72b09ba80beaa60be",
+  "tag": "v0.1.417",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.416"
+  "releaseName": "Fire Tester firmware 0.1.417"
 }
