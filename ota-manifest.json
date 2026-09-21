@@ -1,55 +1,55 @@
 {
-  "assetName": "firmware-0.1.419.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.419/firmware-0.1.419.bin",
+  "assetName": "firmware-0.1.420.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.420/firmware-0.1.420.bin",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.419/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.420/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.419/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.420/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.419/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.420/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2409984,
-      "sha256": "39a25cdf30618f1e3334ef610c83e28706857c86987ca20873ee285f57ff5e86",
-      "assetName": "firmware-0.1.419.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.419/firmware-0.1.419.bin"
+      "sizeBytes": 2410848,
+      "sha256": "7d85959e64a305054227fd86381d1293ef3154ee9fe1bf4de3d0cccb912335c3",
+      "assetName": "firmware-0.1.420.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.420/firmware-0.1.420.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.419/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.420/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.419",
-    "name": "Fire Tester firmware 0.1.419"
+    "tag": "v0.1.420",
+    "name": "Fire Tester firmware 0.1.420"
   },
-  "version": "0.1.419",
-  "sizeBytes": 2409984,
-  "notes": "Release generation resources after capturing the return-transition source frame, before the desktop is visible. This keeps generator cleanup out of post-return desktop frames while preserving the desktop cache. Host regressions and PlatformIO build passed; physical visual acceptance remains required.",
-  "sha256": "39a25cdf30618f1e3334ef610c83e28706857c86987ca20873ee285f57ff5e86",
-  "tag": "v0.1.419",
+  "version": "0.1.420",
+  "sizeBytes": 2410848,
+  "notes": "Prevent post-generation frame stalls by persisting operator, smoke and heat statistics only while the display is hidden. Fix Wi-Fi OTA manifest parsing to bind firmware URL, size and SHA-256 from the root object, and block charge wake or auto-sleep reboot while an update owns the radio. Host regressions and the PlatformIO production build passed; physical runtime acceptance remains required.",
+  "sha256": "7d85959e64a305054227fd86381d1293ef3154ee9fe1bf4de3d0cccb912335c3",
+  "tag": "v0.1.420",
   "schema": 2,
-  "releaseName": "Fire Tester firmware 0.1.419"
+  "releaseName": "Fire Tester firmware 0.1.420"
 }
