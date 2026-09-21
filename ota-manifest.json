@@ -1,6 +1,8 @@
 {
   "assetName": "firmware-0.1.421.bin",
   "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.421/firmware-0.1.421.bin",
+  "sizeBytes": 2410976,
+  "sha256": "b75e0a854803f0658b3ed7d87502da5b88717a51a6a07226475ee83522f794d6",
   "flashPlan": [
     {
       "offset": "0x0",
@@ -46,9 +48,7 @@
     "name": "Fire Tester firmware 0.1.421"
   },
   "version": "0.1.421",
-  "sizeBytes": 2410976,
   "notes": "Prevent post-generation frame stalls by persisting operator, smoke and heat statistics only while the display is hidden. Fix Wi-Fi OTA manifest parsing to bind firmware URL, size and SHA-256 from the root object, and guard every charge-wake and auto-sleep path while an update owns the radio. Host regressions and the PlatformIO production build passed; physical runtime acceptance remains required.",
-  "sha256": "b75e0a854803f0658b3ed7d87502da5b88717a51a6a07226475ee83522f794d6",
   "tag": "v0.1.421",
   "schema": 2,
   "releaseName": "Fire Tester firmware 0.1.421"
