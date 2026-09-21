@@ -1,55 +1,55 @@
 {
-  "version": "0.1.424",
-  "tag": "v0.1.424",
-  "releaseName": "Fire Tester firmware 0.1.424",
-  "assetName": "firmware-0.1.424.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.424/firmware-0.1.424.bin",
-  "sizeBytes": 2413008,
-  "sha256": "afcd9c86f97e632d8e6248162bb0df2ba6a93c38a583dd91e973cdc09580a73e",
+  "version": "0.1.425",
+  "tag": "v0.1.425",
+  "releaseName": "Fire Tester firmware 0.1.425",
+  "assetName": "firmware-0.1.425.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.425/firmware-0.1.425.bin",
+  "sizeBytes": 2412144,
+  "sha256": "8512112ba71ac331ee96f3d99c2657bb9695fc85e3bba9feb19d5d28da18f5ff",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.424/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.425/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.424/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.425/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.424/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.425/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2413008,
-      "sha256": "afcd9c86f97e632d8e6248162bb0df2ba6a93c38a583dd91e973cdc09580a73e",
-      "assetName": "firmware-0.1.424.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.424/firmware-0.1.424.bin"
+      "sizeBytes": 2412144,
+      "sha256": "8512112ba71ac331ee96f3d99c2657bb9695fc85e3bba9feb19d5d28da18f5ff",
+      "assetName": "firmware-0.1.425.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.425/firmware-0.1.425.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.424/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.425/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.424",
-    "name": "Fire Tester firmware 0.1.424"
+    "tag": "v0.1.425",
+    "name": "Fire Tester firmware 0.1.425"
   },
-  "notes": "Restore startup Wi-Fi firmware checks and display hibernation wake, indicator dimming, and automatic shutdown. Hardware acceptance pending.",
+  "notes": "Deferred IR initialization and radio recovery; manual Check progress stays on its button while the automatic curtain is reserved for disruptive recovery. Hibernation keeps screen fade and PWM wake smooth, dims LEDs statically, and pauses renders while BLE, sensors, and buttons continue. The inactivity deadline is no longer blocked by post-Wi-Fi restore bookkeeping. Hardware acceptance pending.",
   "schema": 2
 }
