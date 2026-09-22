@@ -1,55 +1,55 @@
 {
-  "version": "0.1.426",
-  "tag": "v0.1.426",
-  "releaseName": "Fire Tester firmware 0.1.426",
-  "assetName": "firmware-0.1.426.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.426/firmware-0.1.426.bin",
-  "sizeBytes": 2435184,
-  "sha256": "18f0c1c93a016ab883c3a964dfc7cfc504dabdf3d81376ef4afc37c9bdec7d96",
+  "version": "0.1.427",
+  "tag": "v0.1.427",
+  "releaseName": "Fire Tester firmware 0.1.427",
+  "assetName": "firmware-0.1.427.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.427/firmware-0.1.427.bin",
+  "sizeBytes": 2438688,
+  "sha256": "e3f9158ab7ecc2d238a230304db570fc2cf090b0621995af0855be780989f759",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.426/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.427/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.426/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.427/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.426/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.427/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2435184,
-      "sha256": "18f0c1c93a016ab883c3a964dfc7cfc504dabdf3d81376ef4afc37c9bdec7d96",
-      "assetName": "firmware-0.1.426.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.426/firmware-0.1.426.bin"
+      "sizeBytes": 2438688,
+      "sha256": "e3f9158ab7ecc2d238a230304db570fc2cf090b0621995af0855be780989f759",
+      "assetName": "firmware-0.1.427.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.427/firmware-0.1.427.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.426/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.427/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.426",
-    "name": "Fire Tester firmware 0.1.426"
+    "tag": "v0.1.427",
+    "name": "Fire Tester firmware 0.1.427"
   },
-  "notes": "Resume never-attempted IR initialization after the startup deadline. Add local sequential paired INA BAT and cartridge INA load measurements with stored battery voltage, charge level and sag, plus read-only USB export. Add sleep blocker diagnostics; Serial MOD intentionally inhibits sleep. The display load measures backlight only. Hardware acceptance pending.",
+  "notes": "Prevent held IR fixation from bypassing display-idle wake admission; retain recent idle wake causes in SLEEP STATUS. Fix first-use power-test storage, preserve existing records on NVS errors, and expose storage error reasons. Allow cooler spin-up before sampling and require two heater measurements within the existing safety deadline. Correct Ukrainian and English power-test text and improve result readability. Physical idle/wake and load-measurement acceptance remains pending.",
   "schema": 2
 }
