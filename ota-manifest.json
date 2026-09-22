@@ -1,55 +1,55 @@
 {
-  "version": "0.1.436",
-  "tag": "v0.1.436",
-  "releaseName": "Fire Tester firmware 0.1.436",
-  "assetName": "firmware-0.1.436.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.436/firmware-0.1.436.bin",
-  "sizeBytes": 2481568,
-  "sha256": "eeaa03feeeb43b8b067e4223bcbc5221c91d504df905c76c72979342b318b3e6",
+  "version": "0.1.437",
+  "tag": "v0.1.437",
+  "releaseName": "Fire Tester firmware 0.1.437",
+  "assetName": "firmware-0.1.437.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.437/firmware-0.1.437.bin",
+  "sizeBytes": 2497536,
+  "sha256": "63a30a0394297fc43c4773d1c5abc813e7f0c5e4d63b1bfd266970551f77a01f",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.436/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.437/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.436/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.437/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.436/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.437/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2481568,
-      "sha256": "eeaa03feeeb43b8b067e4223bcbc5221c91d504df905c76c72979342b318b3e6",
-      "assetName": "firmware-0.1.436.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.436/firmware-0.1.436.bin"
+      "sizeBytes": 2497536,
+      "sha256": "63a30a0394297fc43c4773d1c5abc813e7f0c5e4d63b1bfd266970551f77a01f",
+      "assetName": "firmware-0.1.437.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.437/firmware-0.1.437.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.436/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.437/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.436",
-    "name": "Fire Tester firmware 0.1.436"
+    "tag": "v0.1.437",
+    "name": "Fire Tester firmware 0.1.437"
   },
-  "notes": "Add fixed-reference runtime current diagnostics with latched generation inhibition and localized device alerts. Move the isolated power test to BIOS, preserve calibration, and export per-block and sensor evidence for Manufacturing. Permit isolated IR sensor diagnostics in BIOS while preserving active-output and update guards.",
+  "notes": "Synchronize Smoke ring and LED pulse phase. Add cached cartridge presence, resistance and liquid checks with explicit recovery. Scope current faults to affected generation modes and show localized red fault curtains. Center temperature labels and label the charger SW6109.",
   "schema": 2
 }
