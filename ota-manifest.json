@@ -1,55 +1,55 @@
 {
-  "version": "0.1.431",
-  "tag": "v0.1.431",
-  "releaseName": "Fire Tester firmware 0.1.431",
-  "assetName": "firmware-0.1.431.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.431/firmware-0.1.431.bin",
-  "sizeBytes": 2463616,
-  "sha256": "d512143317fe1869c34bb786b4c94c9954484c97a95ce517b4b764d88666ad81",
+  "version": "0.1.432",
+  "tag": "v0.1.432",
+  "releaseName": "Fire Tester firmware 0.1.432",
+  "assetName": "firmware-0.1.432.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.432/firmware-0.1.432.bin",
+  "sizeBytes": 2471280,
+  "sha256": "edcd158a63dc1d13c048aaf833589e0afb200182fa2b2e623da3d6eb25854259",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.431/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.432/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.431/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.432/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.431/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.432/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2463616,
-      "sha256": "d512143317fe1869c34bb786b4c94c9954484c97a95ce517b4b764d88666ad81",
-      "assetName": "firmware-0.1.431.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.431/firmware-0.1.431.bin"
+      "sizeBytes": 2471280,
+      "sha256": "edcd158a63dc1d13c048aaf833589e0afb200182fa2b2e623da3d6eb25854259",
+      "assetName": "firmware-0.1.432.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.432/firmware-0.1.432.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.431/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.432/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.431",
-    "name": "Fire Tester firmware 0.1.431"
+    "tag": "v0.1.432",
+    "name": "Fire Tester firmware 0.1.432"
   },
-  "notes": "Add an explicit bounded USB charging power-test session with nonce-bound heartbeat and cancellation. Retain signed battery current, actual charger measurements, and separately labelled estimated load differences. Migrate existing test records without data loss and allow a complete battery-only reference to be pinned outside the rolling log. Preserve local battery tests, actuator deadlines, sleep behavior, and startup/wake visuals.",
+  "notes": "Expand the sequential power test to twelve guarded two-second stages with independent bottom and cartridge LED brightness levels and a second display backlight level. Subtract each existing off-load baseline, preserve separate cartridge INA readings, and classify brightness response using measured noise and charger-estimate consistency. Add fresh plausible sensor and thermistor diagnostics with explicit manual-stimulus and inconclusive states. Preserve seven-block battery references and migrate earlier power-test journals without overwriting their legacy storage keys.",
   "schema": 2
 }
