@@ -1,55 +1,55 @@
 {
-  "version": "0.1.468",
-  "tag": "v0.1.468",
-  "releaseName": "Fire Tester firmware 0.1.468",
-  "assetName": "firmware-0.1.468.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.468/firmware-0.1.468.bin",
-  "sizeBytes": 2451424,
-  "sha256": "7c58607231123f7596c06fc8bba0f00831fe4639997b539570a645fd0fbe37c2",
+  "version": "0.1.469",
+  "tag": "v0.1.469",
+  "releaseName": "Fire Tester firmware 0.1.469",
+  "assetName": "firmware-0.1.469.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.469/firmware-0.1.469.bin",
+  "sizeBytes": 2451632,
+  "sha256": "80abe49a60aa0b339c596a7bf96e167b52507a5eeb330ad68dc52a3ef4b772ad",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.468/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.469/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.468/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.469/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.468/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.469/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2451424,
-      "sha256": "7c58607231123f7596c06fc8bba0f00831fe4639997b539570a645fd0fbe37c2",
-      "assetName": "firmware-0.1.468.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.468/firmware-0.1.468.bin"
+      "sizeBytes": 2451632,
+      "sha256": "80abe49a60aa0b339c596a7bf96e167b52507a5eeb330ad68dc52a3ef4b772ad",
+      "assetName": "firmware-0.1.469.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.469/firmware-0.1.469.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.468/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.469/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.468",
-    "name": "Fire Tester firmware 0.1.468"
+    "tag": "v0.1.469",
+    "name": "Fire Tester firmware 0.1.469"
   },
-  "notes": "Automatic update checks now terminate a stalled HTTP header read at the existing startup deadline. Notification action labels use measured font fitting; Ignore is centered. The 5-second startup check budget and HTTPS certificate validation remain unchanged. Includes the existing temporary Smoke actuator diagnostic bypass; not a production safety qualification.",
+  "notes": "Firmware update notification triangle now shimmers cyan and white. Update notification LEDs signal once, like overtime, instead of repeating; other error reminders retain their behavior. Includes the existing temporary Smoke actuator diagnostic bypass; not a production safety qualification.",
   "schema": 2
 }
