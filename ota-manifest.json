@@ -1,55 +1,55 @@
 {
-  "version": "0.1.470",
-  "tag": "v0.1.470",
-  "releaseName": "Fire Tester firmware 0.1.470",
-  "assetName": "firmware-0.1.470.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.470/firmware-0.1.470.bin",
-  "sizeBytes": 2451648,
-  "sha256": "0d7a9325b4c036ee1fff00cb5a18129a35cb1937e2949e350d06b9bba0d3460c",
+  "version": "0.1.471",
+  "tag": "v0.1.471",
+  "releaseName": "Fire Tester firmware 0.1.471",
+  "assetName": "firmware-0.1.471.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.471/firmware-0.1.471.bin",
+  "sizeBytes": 2451728,
+  "sha256": "f54d69ee2842283a18142882aa62f90d8380529a0d6f3228d458c38110dbe06c",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.470/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.471/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.470/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.471/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.470/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.471/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2451648,
-      "sha256": "0d7a9325b4c036ee1fff00cb5a18129a35cb1937e2949e350d06b9bba0d3460c",
-      "assetName": "firmware-0.1.470.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.470/firmware-0.1.470.bin"
+      "sizeBytes": 2451728,
+      "sha256": "f54d69ee2842283a18142882aa62f90d8380529a0d6f3228d458c38110dbe06c",
+      "assetName": "firmware-0.1.471.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.471/firmware-0.1.471.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.470/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.471/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.470",
-    "name": "Fire Tester firmware 0.1.470"
+    "tag": "v0.1.471",
+    "name": "Fire Tester firmware 0.1.471"
   },
-  "notes": "Manual BIOS entry now takes priority over Serial MOD desktop startup after the confirmed joystick/power-button gesture. Ordinary startup and transport-specific Manufacturing BIOS routing remain unchanged. Includes the existing temporary Smoke actuator diagnostic bypass pending repaired-cartridge battery measurements; not a production safety qualification.",
+  "notes": "BIOS power-test joystick press starts an idle test and cancels an active test, matching the screen instruction. Manual BIOS entry priority fix is retained. Includes the existing temporary Smoke actuator diagnostic bypass pending repaired-cartridge battery measurements; not a production safety qualification.",
   "schema": 2
 }
