@@ -1,55 +1,55 @@
 {
-  "version": "0.1.458",
-  "tag": "v0.1.458",
-  "releaseName": "Fire Tester firmware 0.1.458",
-  "assetName": "firmware-0.1.458.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.458/firmware-0.1.458.bin",
-  "sizeBytes": 2448336,
-  "sha256": "35e587b9bac3873ac56dbe848094b7c83bc0afb01a5684c41f73d794563377b0",
+  "version": "0.1.467",
+  "tag": "v0.1.467",
+  "releaseName": "Fire Tester firmware 0.1.467",
+  "assetName": "firmware-0.1.467.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.467/firmware-0.1.467.bin",
+  "sizeBytes": 2451440,
+  "sha256": "ea33c56b37ed89cb8294366ff8d8b16449925149ae1239d87a7f4feeef1d7a46",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.458/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.467/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.458/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.467/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.458/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.467/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2448336,
-      "sha256": "35e587b9bac3873ac56dbe848094b7c83bc0afb01a5684c41f73d794563377b0",
-      "assetName": "firmware-0.1.458.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.458/firmware-0.1.458.bin"
+      "sizeBytes": 2451440,
+      "sha256": "ea33c56b37ed89cb8294366ff8d8b16449925149ae1239d87a7f4feeef1d7a46",
+      "assetName": "firmware-0.1.467.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.467/firmware-0.1.467.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.458/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.467/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.458",
-    "name": "Fire Tester firmware 0.1.458"
+    "tag": "v0.1.467",
+    "name": "Fire Tester firmware 0.1.467"
   },
-  "notes": "Diagnostic OTA notification test release. Same runtime behavior as USB build 0.1.457: 250 ms power-on hold and bounded early Wi-Fi check for faster startup. Slow checks are skipped and manual checks retain their normal timeout. Includes the existing temporary Smoke actuator diagnostic bypass; not a production safety qualification.",
+  "notes": "Diagnostic firmware: immediate startup SNTP without randomized delay, bounded early HTTPS update check, cached Wi-Fi channel hint, and optimized startup logo rendering. Certificate validation remains enabled. Includes the existing temporary Smoke actuator diagnostic bypass; not a production safety qualification.",
   "schema": 2
 }
