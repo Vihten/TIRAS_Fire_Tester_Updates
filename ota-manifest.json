@@ -1,55 +1,55 @@
 {
-  "version": "0.1.477",
-  "tag": "v0.1.477",
-  "releaseName": "Fire Tester firmware 0.1.477",
-  "assetName": "firmware-0.1.477.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/firmware-0.1.477.bin",
-  "sizeBytes": 2461072,
-  "sha256": "e9c47ee1f9af31e98843e60e33061819c9da31f59fee475f0a310e62fed9173a",
+  "version": "0.1.478",
+  "tag": "v0.1.478",
+  "releaseName": "Fire Tester firmware 0.1.478",
+  "assetName": "firmware-0.1.478.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.478/firmware-0.1.478.bin",
+  "sizeBytes": 2461552,
+  "sha256": "450f7a596479017c6a54b767e975c3ad17720ebcbbff43150fdd100cf9805a6e",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.478/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.478/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.478/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2461072,
-      "sha256": "e9c47ee1f9af31e98843e60e33061819c9da31f59fee475f0a310e62fed9173a",
-      "assetName": "firmware-0.1.477.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/firmware-0.1.477.bin"
+      "sizeBytes": 2461552,
+      "sha256": "450f7a596479017c6a54b767e975c3ad17720ebcbbff43150fdd100cf9805a6e",
+      "assetName": "firmware-0.1.478.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.478/firmware-0.1.478.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.478/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.477",
-    "name": "Fire Tester firmware 0.1.477"
+    "tag": "v0.1.478",
+    "name": "Fire Tester firmware 0.1.478"
   },
-  "notes": "Power diagnostics now capture sensor data before enabling loads, skip sensor-dependent blocks with durable reasons, and report charger communication and data validity. Existing diagnostic history and pinned references migrate without recalibration. Continuous two-second cartridge test retained. Existing temporary Smoke actuator diagnostic bypass remains; not a production safety qualification.",
+  "notes": "Fix false USB power-test safety aborts caused by comparing an old loop timestamp with a newer heartbeat. All watchdog paths now read heartbeat and current time coherently. Timeout limits and output protection remain unchanged. Safety stops report their cause. Includes sensor preflight and selective load skipping. Existing temporary Smoke actuator diagnostic bypass remains; not a production safety qualification.",
   "schema": 2
 }
