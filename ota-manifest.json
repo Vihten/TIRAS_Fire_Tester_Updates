@@ -1,55 +1,55 @@
 {
-  "version": "0.1.476",
-  "tag": "v0.1.476",
-  "releaseName": "Fire Tester firmware 0.1.476",
-  "assetName": "firmware-0.1.476.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.476/firmware-0.1.476.bin",
-  "sizeBytes": 2454960,
-  "sha256": "25943597d20c36a0595043462b1a7f9b6a06606d60ddf7d0d74adccb14cf6d8b",
+  "version": "0.1.477",
+  "tag": "v0.1.477",
+  "releaseName": "Fire Tester firmware 0.1.477",
+  "assetName": "firmware-0.1.477.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/firmware-0.1.477.bin",
+  "sizeBytes": 2461072,
+  "sha256": "e9c47ee1f9af31e98843e60e33061819c9da31f59fee475f0a310e62fed9173a",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.476/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.476/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.476/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2454960,
-      "sha256": "25943597d20c36a0595043462b1a7f9b6a06606d60ddf7d0d74adccb14cf6d8b",
-      "assetName": "firmware-0.1.476.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.476/firmware-0.1.476.bin"
+      "sizeBytes": 2461072,
+      "sha256": "e9c47ee1f9af31e98843e60e33061819c9da31f59fee475f0a310e62fed9173a",
+      "assetName": "firmware-0.1.477.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/firmware-0.1.477.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.476/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.477/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.476",
-    "name": "Fire Tester firmware 0.1.476"
+    "tag": "v0.1.477",
+    "name": "Fire Tester firmware 0.1.477"
   },
-  "notes": "Cartridge power test now uses continuous full-on output with the PWM waveform disabled for the existing two-second load window. Independent deadline and output checks cover constant HIGH and safe LOW shutdown. Stored references remain unchanged. Includes the existing temporary Smoke actuator diagnostic bypass pending repaired-cartridge battery measurements; not a production safety qualification.",
+  "notes": "Power diagnostics now capture sensor data before enabling loads, skip sensor-dependent blocks with durable reasons, and report charger communication and data validity. Existing diagnostic history and pinned references migrate without recalibration. Continuous two-second cartridge test retained. Existing temporary Smoke actuator diagnostic bypass remains; not a production safety qualification.",
   "schema": 2
 }
