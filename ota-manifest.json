@@ -1,55 +1,55 @@
 {
-  "version": "0.1.483",
-  "tag": "v0.1.483",
-  "releaseName": "Fire Tester firmware 0.1.483",
-  "assetName": "firmware-0.1.483.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.483/firmware-0.1.483.bin",
-  "sizeBytes": 2476720,
-  "sha256": "572ca4e7729f5b5085f9522d2ffe5f4b4252e02fc8f17bd6e3fbae297f09cf46",
+  "version": "0.1.484",
+  "tag": "v0.1.484",
+  "releaseName": "Fire Tester firmware 0.1.484",
+  "assetName": "firmware-0.1.484.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.484/firmware-0.1.484.bin",
+  "sizeBytes": 2478176,
+  "sha256": "e97eda8e402bcdbdcd61a33b19b5b25365a3169e2e1fbdebc8cc71781dcedf73",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.483/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.484/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.483/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.484/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.483/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.484/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2476720,
-      "sha256": "572ca4e7729f5b5085f9522d2ffe5f4b4252e02fc8f17bd6e3fbae297f09cf46",
-      "assetName": "firmware-0.1.483.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.483/firmware-0.1.483.bin"
+      "sizeBytes": 2478176,
+      "sha256": "e97eda8e402bcdbdcd61a33b19b5b25365a3169e2e1fbdebc8cc71781dcedf73",
+      "assetName": "firmware-0.1.484.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.484/firmware-0.1.484.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.483/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.484/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.483",
-    "name": "Fire Tester firmware 0.1.483"
+    "tag": "v0.1.484",
+    "name": "Fire Tester firmware 0.1.484"
   },
-  "notes": "Synchronize startup LED rendering with the display startup ramp, including early preview and normal fallback without restarting the fade at handoff. Fade cartridge illumination from its last accepted output during shutdown instead of recomputing asleep-state color. Preserve normal device ownership, settings and diagnostic priorities.",
+  "notes": "Suppress cartridge illumination after confirmed absence. Retry missing cartridge presence in the background with bounded pump-off probes, preserve startup checking, and avoid duplicate Smoke-entry checks during recovery.",
   "schema": 2
 }
