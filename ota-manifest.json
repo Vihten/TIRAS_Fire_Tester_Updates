@@ -1,55 +1,55 @@
 {
-  "version": "0.1.487",
-  "tag": "v0.1.487",
-  "releaseName": "Fire Tester firmware 0.1.487",
-  "assetName": "firmware-0.1.487.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.487/firmware-0.1.487.bin",
-  "sizeBytes": 2479760,
-  "sha256": "2e18727f950b9b49c60d744be7c9dee50c13faa1aa00b5313e31ddf11765028e",
+  "version": "0.1.488",
+  "tag": "v0.1.488",
+  "releaseName": "Fire Tester firmware 0.1.488",
+  "assetName": "firmware-0.1.488.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.488/firmware-0.1.488.bin",
+  "sizeBytes": 2479920,
+  "sha256": "aca0dfa7fb35624dae3287b78ef483afc7a9dc66c473bf7968c899a0494cc314",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.487/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.488/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.487/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.488/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.487/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.488/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2479760,
-      "sha256": "2e18727f950b9b49c60d744be7c9dee50c13faa1aa00b5313e31ddf11765028e",
-      "assetName": "firmware-0.1.487.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.487/firmware-0.1.487.bin"
+      "sizeBytes": 2479920,
+      "sha256": "aca0dfa7fb35624dae3287b78ef483afc7a9dc66c473bf7968c899a0494cc314",
+      "assetName": "firmware-0.1.488.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.488/firmware-0.1.488.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.487/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.488/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.487",
-    "name": "Fire Tester firmware 0.1.487"
+    "tag": "v0.1.488",
+    "name": "Fire Tester firmware 0.1.488"
   },
-  "notes": "Prevent joystick navigation and clicks from leaving the Easter game. Return with one Home short press or the existing automatic game completion. Accept faster debounced desktop/game taps for reliable double-press entry, preserving other controls and long-press power-off.",
+  "notes": "Move the diagnostic distance overlay to PSRAM and reclaim any legacy internal copy before Bluetooth memory admission. Preserve the internal framebuffer, DMA buffers, normal allocation policy, and Bluetooth admission floors. Poll IR hardware once before classifying an expired ranging deadline to avoid false timeouts after delayed service. Add throttled USB telemetry for blocked Bluetooth handback.",
   "schema": 2
 }
