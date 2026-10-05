@@ -1,55 +1,55 @@
 {
-  "version": "0.1.490",
-  "tag": "v0.1.490",
-  "releaseName": "Fire Tester firmware 0.1.490",
-  "assetName": "firmware-0.1.490.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.490/firmware-0.1.490.bin",
-  "sizeBytes": 2480048,
-  "sha256": "1e2e5c5096fe3ff97f798ca9fe881fa0fe168d10cc126c11bd6018e1c429e215",
+  "version": "0.1.491",
+  "tag": "v0.1.491",
+  "releaseName": "Fire Tester firmware 0.1.491",
+  "assetName": "firmware-0.1.491.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.491/firmware-0.1.491.bin",
+  "sizeBytes": 2479120,
+  "sha256": "e3bfd29d774415673ecd490693b2666708f400103e05f677c9743e92d117d2e9",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.490/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.491/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.490/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.491/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.490/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.491/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2480048,
-      "sha256": "1e2e5c5096fe3ff97f798ca9fe881fa0fe168d10cc126c11bd6018e1c429e215",
-      "assetName": "firmware-0.1.490.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.490/firmware-0.1.490.bin"
+      "sizeBytes": 2479120,
+      "sha256": "e3bfd29d774415673ecd490693b2666708f400103e05f677c9743e92d117d2e9",
+      "assetName": "firmware-0.1.491.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.491/firmware-0.1.491.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.490/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/main/release-assets/v0.1.491/spiffs.bin"
     }
   ],
   "release": {
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.490",
-    "name": "Fire Tester firmware 0.1.490"
+    "tag": "v0.1.491",
+    "name": "Fire Tester firmware 0.1.491"
   },
-  "notes": "Fix phone Smoke start being canceled when a cartridge preflight probe starts before the queued display transition. Allow the accepted BLE visual transition while the cartridge monitor retains safe pump-off probe ownership. Prevent delayed cleanup from a previous generation from canceling a newly accepted Smoke session. Preserve confirmed-fault and runtime-current admission.",
+  "notes": "Replace the LED settings icon with the supplied device silhouette. Show the four actual brightness-scaled LED output colors in its indicator window in the settings menu and LED detail pages, with black for off output. Read output snapshots without waiting for the LED driver.",
   "schema": 2
 }
