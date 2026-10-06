@@ -33,6 +33,10 @@ jobs:
           asset_name="$(jq -r '.assetName' ota-manifest.json)"
           asset_dir="release-assets/${release_tag}"
           checksums="${asset_dir}/SHA256SUMS.txt"
+          release_flags=(--latest)
+          if [[ "${release_tag}" == *b ]]; then
+            release_flags=(--prerelease --latest=false)
+          fi
 
           test "${manifest_tag}" = "${release_tag}"
           test -s "${asset_dir}/${asset_name}"
@@ -46,9 +50,9 @@ jobs:
             gh release upload "${release_tag}" "${asset_dir}"/*.bin "${checksums}" \
               --repo "${GITHUB_REPOSITORY}" --clobber
             gh release edit "${release_tag}" --repo "${GITHUB_REPOSITORY}" \
-              --latest --title "${release_name}" --notes "${release_notes}"
+              "${release_flags[@]}" --title "${release_name}" --notes "${release_notes}"
           else
             gh release create "${release_tag}" "${asset_dir}"/*.bin "${checksums}" \
-              --repo "${GITHUB_REPOSITORY}" --verify-tag --latest \
+              --repo "${GITHUB_REPOSITORY}" --verify-tag "${release_flags[@]}" \
               --title "${release_name}" --notes "${release_notes}"
           fi
