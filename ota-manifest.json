@@ -3,57 +3,57 @@
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.525b",
-    "name": "Fire Tester firmware 0.1.525b"
+    "tag": "v0.1.526b",
+    "name": "Fire Tester firmware 0.1.526b"
   },
-  "notes": "Adds overtime body LED alerts with priority over mixing and purge statuses, using atomic backend status updates. Existing audio behavior is unchanged. Physical validation is pending; no hardware-success claim is made.",
-  "version": "0.1.525b",
-  "tag": "v0.1.525b",
-  "releaseName": "Fire Tester 0.1.525b",
-  "assetName": "firmware-0.1.525b.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/firmware-0.1.525b.bin",
-  "sizeBytes": 2499536,
-  "sha256": "f0e2cf385adc3d670a2e8f183d12e4309c3ea3c46afbe7bbc46ebd0f5fa39216",
+  "notes": "Overtime alerts reuse the existing standard yellow error cue and take priority over mixing and purge status. Audio, GPIO, and IR behavior are unchanged. Physical hardware validation is pending; no hardware-success claim is made.",
+  "version": "0.1.526b",
+  "tag": "v0.1.526b",
+  "releaseName": "Fire Tester 0.1.526b",
+  "assetName": "firmware-0.1.526b.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/firmware-0.1.526b.bin",
+  "sizeBytes": 2499760,
+  "sha256": "adf4567f31a5db292729c51331503496eab865cc83ff3de61d2a33c3bfab1ef2",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 2499536,
-      "sha256": "f0e2cf385adc3d670a2e8f183d12e4309c3ea3c46afbe7bbc46ebd0f5fa39216",
-      "assetName": "firmware-0.1.525b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/firmware-0.1.525b.bin"
+      "sizeBytes": 2499760,
+      "sha256": "adf4567f31a5db292729c51331503496eab865cc83ff3de61d2a33c3bfab1ef2",
+      "assetName": "firmware-0.1.526b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/firmware-0.1.526b.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/spiffs.bin"
     }
   ],
   "migration": {
     "id": "beta-renumber-20261006",
-    "target": "0.1.525b",
+    "target": "0.1.526b",
     "legacyVersions": [
       "0.1.496"
     ]
@@ -61,52 +61,52 @@
   "channels": {
     "stable": null,
     "beta": {
-      "version": "0.1.525b",
-      "tag": "v0.1.525b",
-      "releaseName": "Fire Tester 0.1.525b",
-      "assetName": "firmware-0.1.525b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/firmware-0.1.525b.bin",
-      "sizeBytes": 2499536,
-      "sha256": "f0e2cf385adc3d670a2e8f183d12e4309c3ea3c46afbe7bbc46ebd0f5fa39216",
+      "version": "0.1.526b",
+      "tag": "v0.1.526b",
+      "releaseName": "Fire Tester 0.1.526b",
+      "assetName": "firmware-0.1.526b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/firmware-0.1.526b.bin",
+      "sizeBytes": 2499760,
+      "sha256": "adf4567f31a5db292729c51331503496eab865cc83ff3de61d2a33c3bfab1ef2",
       "flashPlan": [
         {
           "offset": "0x0",
           "sizeBytes": 15104,
           "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
           "assetName": "bootloader.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/bootloader.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/bootloader.bin"
         },
         {
           "offset": "0x8000",
           "sizeBytes": 3072,
           "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
           "assetName": "partitions.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/partitions.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/partitions.bin"
         },
         {
           "offset": "0x2E000",
           "sizeBytes": 8192,
           "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
           "assetName": "boot_app0.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/boot_app0.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/boot_app0.bin"
         },
         {
           "offset": "0x30000",
-          "sizeBytes": 2499536,
-          "sha256": "f0e2cf385adc3d670a2e8f183d12e4309c3ea3c46afbe7bbc46ebd0f5fa39216",
-          "assetName": "firmware-0.1.525b.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/firmware-0.1.525b.bin"
+          "sizeBytes": 2499760,
+          "sha256": "adf4567f31a5db292729c51331503496eab865cc83ff3de61d2a33c3bfab1ef2",
+          "assetName": "firmware-0.1.526b.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/firmware-0.1.526b.bin"
         },
         {
           "offset": "0xC90000",
           "sizeBytes": 3538944,
           "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
           "assetName": "spiffs.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.525b/release-assets/v0.1.525b/spiffs.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.526b/release-assets/v0.1.526b/spiffs.bin"
         }
       ]
     }
   },
   "schema": 3,
-  "sourceCommit": "f45f782bff6d2c7f6f7c8eb640e386606c5b53af"
+  "sourceCommit": "04a27a0a92f18defdb62e7321fd9d68db687f162"
 }
