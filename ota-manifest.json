@@ -6,7 +6,7 @@
     "tag": "v0.1.681b",
     "name": "Fire Tester firmware 0.1.681b"
   },
-  "notes": "Release notes pending root review.",
+  "notes": "USB status now reports Easter, Tenis, Charging Wake and Critical Alert screens truthfully instead of labelling them Desktop. These are readouts; supported navigation targets are unchanged.\n\nSafe USB STOP/CLOSE preserves a retained critical alert. Completion waits for the matching display cleanup acknowledgement, inactive transitions and actual zero output/service readback. HOME reports rejection while the critical alert remains visible. CLOSE retires its lease and restores the prior BLE state; no fault is cleared by this cleanup.\n\nHost regression checks and a normal firmware build passed. Physical power-button, sleep/wake, optical LED and thermal-load behavior are not established by host tests. The 680 development candidate was not published; this release includes its screen telemetry correction and the subsequent critical-screen cleanup fix.",
   "version": "0.1.681b",
   "tag": "v0.1.681b",
   "releaseName": "Fire Tester 0.1.681b",
