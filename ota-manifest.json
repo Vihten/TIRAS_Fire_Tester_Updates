@@ -3,57 +3,57 @@
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.689b",
-    "name": "Fire Tester firmware 0.1.689b"
+    "tag": "v0.1.690b",
+    "name": "Fire Tester firmware 0.1.690b"
   },
-  "notes": "Fixes repair-action ownership in the fault curtain. A pending thermistor check cannot overlap another repair; dismissal invalidates its UI token and ignores its late completion while ordinary sensor sampling continues. Failed checks can be explicitly retried. Dismissal clears their presentation, and confirmed source resolution releases stale failure cards without clearing hardware latches cosmetically.\n\nSmoke-to-Cooling learning now keeps a valid start at uptime zero and measures durations across millis rollover. Invalid timing cannot become new short-puff feedback; existing learned penalty and flashlight records are preserved. The base model weights and safety thresholds are unchanged.\n\nIncludes a bounded passive-fault retry QA option that verifies source, focus, terminal failure and exactly one new action press. Build and host checks are recorded separately from live and physical acceptance. This release does not claim to resolve the previously observed intermittent BLE transport failure or complete every hardware QA path.\n",
-  "version": "0.1.689b",
-  "tag": "v0.1.689b",
-  "releaseName": "Fire Tester 0.1.689b",
-  "assetName": "firmware-0.1.689b.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/firmware-0.1.689b.bin",
-  "sizeBytes": 3128800,
-  "sha256": "b19c63ec3573662508143daffc39684ea9ba9693c51b0edffd9fdbd5c46cfa5e",
+  "notes": "Fault curtain retry guidance now uses the explicit RETRY label. LED transport diagnostics report unavailable markers without blocking fault handling. Passive watch coverage remains partial and does not establish complete fault-path coverage.\n\nNo new machine-learning model or base model weights are included. Build and host checks remain separate from device installation and physical acceptance. No physical proof is claimed until root records it.\n",
+  "version": "0.1.690b",
+  "tag": "v0.1.690b",
+  "releaseName": "Fire Tester 0.1.690b",
+  "assetName": "firmware-0.1.690b.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/firmware-0.1.690b.bin",
+  "sizeBytes": 3128976,
+  "sha256": "ebefd83ae0e92afc3b09c18dba22db8ddbb7fdb6f8e210e3e9854bc7bb023010",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 3128800,
-      "sha256": "b19c63ec3573662508143daffc39684ea9ba9693c51b0edffd9fdbd5c46cfa5e",
-      "assetName": "firmware-0.1.689b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/firmware-0.1.689b.bin"
+      "sizeBytes": 3128976,
+      "sha256": "ebefd83ae0e92afc3b09c18dba22db8ddbb7fdb6f8e210e3e9854bc7bb023010",
+      "assetName": "firmware-0.1.690b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/firmware-0.1.690b.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/spiffs.bin"
     }
   ],
   "migration": {
     "id": "beta-renumber-20261006",
-    "target": "0.1.689b",
+    "target": "0.1.690b",
     "legacyVersions": [
       "0.1.496"
     ]
@@ -61,48 +61,48 @@
   "channels": {
     "stable": null,
     "beta": {
-      "version": "0.1.689b",
-      "tag": "v0.1.689b",
-      "releaseName": "Fire Tester 0.1.689b",
-      "assetName": "firmware-0.1.689b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/firmware-0.1.689b.bin",
-      "sizeBytes": 3128800,
-      "sha256": "b19c63ec3573662508143daffc39684ea9ba9693c51b0edffd9fdbd5c46cfa5e",
+      "version": "0.1.690b",
+      "tag": "v0.1.690b",
+      "releaseName": "Fire Tester 0.1.690b",
+      "assetName": "firmware-0.1.690b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/firmware-0.1.690b.bin",
+      "sizeBytes": 3128976,
+      "sha256": "ebefd83ae0e92afc3b09c18dba22db8ddbb7fdb6f8e210e3e9854bc7bb023010",
       "flashPlan": [
         {
           "offset": "0x0",
           "sizeBytes": 15104,
           "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
           "assetName": "bootloader.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/bootloader.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/bootloader.bin"
         },
         {
           "offset": "0x8000",
           "sizeBytes": 3072,
           "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
           "assetName": "partitions.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/partitions.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/partitions.bin"
         },
         {
           "offset": "0x2E000",
           "sizeBytes": 8192,
           "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
           "assetName": "boot_app0.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/boot_app0.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/boot_app0.bin"
         },
         {
           "offset": "0x30000",
-          "sizeBytes": 3128800,
-          "sha256": "b19c63ec3573662508143daffc39684ea9ba9693c51b0edffd9fdbd5c46cfa5e",
-          "assetName": "firmware-0.1.689b.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/firmware-0.1.689b.bin"
+          "sizeBytes": 3128976,
+          "sha256": "ebefd83ae0e92afc3b09c18dba22db8ddbb7fdb6f8e210e3e9854bc7bb023010",
+          "assetName": "firmware-0.1.690b.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/firmware-0.1.690b.bin"
         },
         {
           "offset": "0xC90000",
           "sizeBytes": 3538944,
           "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
           "assetName": "spiffs.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.689b/release-assets/v0.1.689b/spiffs.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.690b/release-assets/v0.1.690b/spiffs.bin"
         }
       ]
     }
