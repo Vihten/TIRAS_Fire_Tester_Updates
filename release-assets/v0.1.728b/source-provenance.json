@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "version": "0.1.728b",
+  "tag": "v0.1.728b",
+  "sourceRepository": "Vihten/TIRAS_Fire_Tester_HW1",
+  "sourceCommit": "8a0368ac37a4f1bca6fd57aa0954b3de4443e9c8",
+  "firmwareAsset": "firmware-0.1.728b.bin",
+  "firmwareSizeBytes": 3159056,
+  "firmwareSha256": "7b7e7a120ec0c23a2c83e1da59a564c477bcd8556b140b9f1ac59bb933627ec3"
+}
