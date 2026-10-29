@@ -3,57 +3,57 @@
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.736b",
-    "name": "Fire Tester firmware 0.1.736b"
+    "tag": "v0.1.737b",
+    "name": "Fire Tester firmware 0.1.737b"
   },
-  "notes": "Allow a bounded CRT address-safety retry after a deferred initialization attempt.\n\nPreviously, initialization attempts=1 excluded Deferred/AddressUnsafe from both automatic quarantine release and the separate address-proof path. A connected CRT could therefore remain held in XSHUT after a transient startup condition. Initialization attempts no longer consume that independent proof opportunity.\n\nThe existing limits remain: at most three address-proof passes in a nonrenewable five-second window with 250 ms retry delay. Window/BusBusy still require no prior initialization attempt. Confirmed missing/functional faults, cancellation and other excluded reasons remain blocked. Bus ownership, XSHUT settling, primary-address proof, CRT model identity and the possible-default-address latch are not waived. Future retry deadlines are preserved.\n\nConnected-device readback reached normal Desktop/Twin with CRT Ready on its first initialization attempt, no new HAL timeout, and unchanged 64-row flashlight learning. The exact post-attempt retry case is verified by a compiled production-policy regression test and review; this boot did not reproduce that intermittent branch. Primary IR and heater-NTC faults remain. The prior cooler-reference fix still reports a measured but inconclusive result, without a false health PASS.\n\nValidation: fresh review, 44 host suites, checked ESP32-S3 build, actual ELF/map deadline audit, exact USB END/hash acknowledgement and guarded target readback. Static RAM unchanged. Firmware: 3166096 bytes; SHA-256 ceba4522e7c91489bda36ac76951829c6f49fecbb4e28f0d6da5a6bfac13672b. Full QA remains incomplete.\n",
-  "version": "0.1.736b",
-  "tag": "v0.1.736b",
-  "releaseName": "Fire Tester 0.1.736b",
-  "assetName": "firmware-0.1.736b.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/firmware-0.1.736b.bin",
-  "sizeBytes": 3166096,
-  "sha256": "ceba4522e7c91489bda36ac76951829c6f49fecbb4e28f0d6da5a6bfac13672b",
+  "notes": "0.1.737b\n\nRuntime heater/cooler diagnostic results now follow their unique runtime test\nrequest ID. Fresh results remain usable after long uptime gaps and millis\nrollover; zero, duplicate, older and cross-load replays are rejected. The\ncooler reference-unavailable result is correlated to the same request.\nRuntime evidence reads and cancellation also verify request origin, so a UART\nrequest with the same numeric ID cannot be mistaken for the runtime pulse.\nUART cancellation cannot cancel an unrelated runtime pulse with a colliding\nID; the universal safety-stop paths retain their behavior.\n\nCurrent limits, diagnostic pulse durations, sensor configuration, learned\nflashlight settings, BLE memory admission and animation cadence are unchanged.\nAn unavailable matching cooler reference remains inconclusive and cannot clear\na confirmed fault. This does not claim recovery of a missing sensor.\n",
+  "version": "0.1.737b",
+  "tag": "v0.1.737b",
+  "releaseName": "Fire Tester 0.1.737b",
+  "assetName": "firmware-0.1.737b.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/firmware-0.1.737b.bin",
+  "sizeBytes": 3166448,
+  "sha256": "28bb05de5518cf7cd7ee3ca630349d76a755c3ada00ca35b65f672d8738c6ab3",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 3166096,
-      "sha256": "ceba4522e7c91489bda36ac76951829c6f49fecbb4e28f0d6da5a6bfac13672b",
-      "assetName": "firmware-0.1.736b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/firmware-0.1.736b.bin"
+      "sizeBytes": 3166448,
+      "sha256": "28bb05de5518cf7cd7ee3ca630349d76a755c3ada00ca35b65f672d8738c6ab3",
+      "assetName": "firmware-0.1.737b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/firmware-0.1.737b.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/spiffs.bin"
     }
   ],
   "migration": {
     "id": "beta-renumber-20261006",
-    "target": "0.1.736b",
+    "target": "0.1.737b",
     "legacyVersions": [
       "0.1.496"
     ]
@@ -61,48 +61,48 @@
   "channels": {
     "stable": null,
     "beta": {
-      "version": "0.1.736b",
-      "tag": "v0.1.736b",
-      "releaseName": "Fire Tester 0.1.736b",
-      "assetName": "firmware-0.1.736b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/firmware-0.1.736b.bin",
-      "sizeBytes": 3166096,
-      "sha256": "ceba4522e7c91489bda36ac76951829c6f49fecbb4e28f0d6da5a6bfac13672b",
+      "version": "0.1.737b",
+      "tag": "v0.1.737b",
+      "releaseName": "Fire Tester 0.1.737b",
+      "assetName": "firmware-0.1.737b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/firmware-0.1.737b.bin",
+      "sizeBytes": 3166448,
+      "sha256": "28bb05de5518cf7cd7ee3ca630349d76a755c3ada00ca35b65f672d8738c6ab3",
       "flashPlan": [
         {
           "offset": "0x0",
           "sizeBytes": 15104,
           "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
           "assetName": "bootloader.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/bootloader.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/bootloader.bin"
         },
         {
           "offset": "0x8000",
           "sizeBytes": 3072,
           "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
           "assetName": "partitions.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/partitions.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/partitions.bin"
         },
         {
           "offset": "0x2E000",
           "sizeBytes": 8192,
           "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
           "assetName": "boot_app0.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/boot_app0.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/boot_app0.bin"
         },
         {
           "offset": "0x30000",
-          "sizeBytes": 3166096,
-          "sha256": "ceba4522e7c91489bda36ac76951829c6f49fecbb4e28f0d6da5a6bfac13672b",
-          "assetName": "firmware-0.1.736b.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/firmware-0.1.736b.bin"
+          "sizeBytes": 3166448,
+          "sha256": "28bb05de5518cf7cd7ee3ca630349d76a755c3ada00ca35b65f672d8738c6ab3",
+          "assetName": "firmware-0.1.737b.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/firmware-0.1.737b.bin"
         },
         {
           "offset": "0xC90000",
           "sizeBytes": 3538944,
           "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
           "assetName": "spiffs.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.736b/release-assets/v0.1.736b/spiffs.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.737b/release-assets/v0.1.737b/spiffs.bin"
         }
       ]
     }
