@@ -3,57 +3,57 @@
     "components": [
       "fireTester"
     ],
-    "tag": "v0.1.756b",
-    "name": "Fire Tester firmware 0.1.756b"
+    "tag": "v0.1.757b",
+    "name": "Fire Tester firmware 0.1.757b"
   },
-  "notes": "Fire Tester 0.1.756b\n\nSince public 0.1.754b, this release preserves the last accepted charge-current sample and original timestamp during bus contention, invalidates it at confirmed attachment boundaries, and guards lease/cache generations. FIRST/LAST producer records expose the failure stage. It also guards null HTTP body streams and signed read errors across metadata, web assets and OTA, allowing normal error cleanup instead of a null dereference. Freshness/skew/safety limits, pulse behavior, allocator/admission, persistence and display cadence are unchanged.\n\nThe unpublished 755 candidate had five startup TLS null-stream panics and was rejected. Fifty-one host suites pass for 756, including the production metadata reader with HTTP 200 plus null stream, TLS read failure, partial reads and cancellation. The 3,178,912-byte image built in 138.57 s and was installed with all 777 blocks acknowledged in 78.31 s.\n\nTwo guarded 35-second startups passed without panic. The first completed automatic metadata checking. The second reproduced AES allocation and TLS read failures, reported GITHUB TIMEOUT, and continued to normal idle Desktop. This verifies graceful handling of that failure; the internal-memory shortage itself is not fixed.\n\nFresh checks passed cartridge presence/quality (61%, 871 milliohm on the first boot), heater NTC 22.660 C, primary IR 82 mm and cartridge IR 58 mm. Final repeat readback showed a present unblocked cartridge at 872 milliohm, both IR sensors ready, zero retained IR I/O failures and zero faults. Learning data remain unchanged at 64 records, generation 90/revision 31. Desktop, cartridge settings and update-menu screenshots/navigation were checked; this is not an on-device OTA installation claim.\n\nOne cooler acquisition completed with 10 qualified samples averaging 663.8 mA while an actual BusBusy preserved an unchanged 67 ms-old sample. It remained REFERENCE_UNAVAILABLE. On the repeat boot, the final cooler attempt stopped at 84 ms device/charge skew against the unchanged 80 ms limit. That remaining producer scheduling problem is not fixed, and no airflow or fan-health pass is claimed.\n\nSixteen later Desktop timing observations had median period 18,396 us (54.3734 inverse-period FPS). Stable 60 FPS, full physical/function/phone BLE QA, calibrated cooler health, independent AI series and a hosted QR/help URL remain open.\n",
-  "version": "0.1.756b",
-  "tag": "v0.1.756b",
-  "releaseName": "Fire Tester 0.1.756b",
-  "assetName": "firmware-0.1.756b.bin",
-  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/firmware-0.1.756b.bin",
-  "sizeBytes": 3178912,
-  "sha256": "19e7f7401f3671d93e4218995555c566e106676d753f8779b16b9300770f6f22",
+  "notes": "Improve preflight current acquisition after brief charge-bus contention with one bounded 20 ms retry; persistent contention returns to 40 ms sampling. Preserve freshness, pairing-skew and current limits, output interlocks, ordinary sampling and persistence behavior. Add a fixed-size cache-only retry diagnostic and reject stale or PowerTest-owned completions.\n\nValidation: 53 selected host suites, 19 additional E2E simulation suites and two navigation executables passed; isolated normal build and artifact hashes verified. On Fire HW1, an actual BusBusy was followed by an acquired retry 21 ms later. Cooler data acquisition completed 1000 ms with 10 qualified samples; health classification remains INCONCLUSIVE because a compatible reference is unavailable. Fresh passive checks reported 11 PASS, one uninitialized liquid tracker and four stimulus-required controls/display. Startup panic scan was clean, main_idle and battery telemetry advanced, and all 64 learning records were preserved.\n\nFull function/physical-control/phone acceptance, fault and QR presentation, calibrated cooler health, independent learning series and sustained 60 FPS remain open. This beta does not claim those results.",
+  "version": "0.1.757b",
+  "tag": "v0.1.757b",
+  "releaseName": "Fire Tester 0.1.757b",
+  "assetName": "firmware-0.1.757b.bin",
+  "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/firmware-0.1.757b.bin",
+  "sizeBytes": 3179696,
+  "sha256": "414c4ce1d19e497828b5c60fe3101c1a5e3c4c2f9b4bbf7227e4b6057afc5be3",
   "flashPlan": [
     {
       "offset": "0x0",
       "sizeBytes": 15104,
       "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
       "assetName": "bootloader.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/bootloader.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/bootloader.bin"
     },
     {
       "offset": "0x8000",
       "sizeBytes": 3072,
       "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
       "assetName": "partitions.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/partitions.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/partitions.bin"
     },
     {
       "offset": "0x2E000",
       "sizeBytes": 8192,
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "assetName": "boot_app0.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/boot_app0.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/boot_app0.bin"
     },
     {
       "offset": "0x30000",
-      "sizeBytes": 3178912,
-      "sha256": "19e7f7401f3671d93e4218995555c566e106676d753f8779b16b9300770f6f22",
-      "assetName": "firmware-0.1.756b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/firmware-0.1.756b.bin"
+      "sizeBytes": 3179696,
+      "sha256": "414c4ce1d19e497828b5c60fe3101c1a5e3c4c2f9b4bbf7227e4b6057afc5be3",
+      "assetName": "firmware-0.1.757b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/firmware-0.1.757b.bin"
     },
     {
       "offset": "0xC90000",
       "sizeBytes": 3538944,
       "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
       "assetName": "spiffs.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/spiffs.bin"
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/spiffs.bin"
     }
   ],
   "migration": {
     "id": "beta-renumber-20261006",
-    "target": "0.1.756b",
+    "target": "0.1.757b",
     "legacyVersions": [
       "0.1.496"
     ]
@@ -61,48 +61,48 @@
   "channels": {
     "stable": null,
     "beta": {
-      "version": "0.1.756b",
-      "tag": "v0.1.756b",
-      "releaseName": "Fire Tester 0.1.756b",
-      "assetName": "firmware-0.1.756b.bin",
-      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/firmware-0.1.756b.bin",
-      "sizeBytes": 3178912,
-      "sha256": "19e7f7401f3671d93e4218995555c566e106676d753f8779b16b9300770f6f22",
+      "version": "0.1.757b",
+      "tag": "v0.1.757b",
+      "releaseName": "Fire Tester 0.1.757b",
+      "assetName": "firmware-0.1.757b.bin",
+      "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/firmware-0.1.757b.bin",
+      "sizeBytes": 3179696,
+      "sha256": "414c4ce1d19e497828b5c60fe3101c1a5e3c4c2f9b4bbf7227e4b6057afc5be3",
       "flashPlan": [
         {
           "offset": "0x0",
           "sizeBytes": 15104,
           "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363",
           "assetName": "bootloader.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/bootloader.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/bootloader.bin"
         },
         {
           "offset": "0x8000",
           "sizeBytes": 3072,
           "sha256": "d66746c0bc89f78e930d683fc83e5b2b7d8f37c5d63128d3b2c5e4788807bc3c",
           "assetName": "partitions.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/partitions.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/partitions.bin"
         },
         {
           "offset": "0x2E000",
           "sizeBytes": 8192,
           "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
           "assetName": "boot_app0.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/boot_app0.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/boot_app0.bin"
         },
         {
           "offset": "0x30000",
-          "sizeBytes": 3178912,
-          "sha256": "19e7f7401f3671d93e4218995555c566e106676d753f8779b16b9300770f6f22",
-          "assetName": "firmware-0.1.756b.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/firmware-0.1.756b.bin"
+          "sizeBytes": 3179696,
+          "sha256": "414c4ce1d19e497828b5c60fe3101c1a5e3c4c2f9b4bbf7227e4b6057afc5be3",
+          "assetName": "firmware-0.1.757b.bin",
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/firmware-0.1.757b.bin"
         },
         {
           "offset": "0xC90000",
           "sizeBytes": 3538944,
           "sha256": "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
           "assetName": "spiffs.bin",
-          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.756b/release-assets/v0.1.756b/spiffs.bin"
+          "downloadUrl": "https://raw.githubusercontent.com/Vihten/TIRAS_Fire_Tester_Updates/v0.1.757b/release-assets/v0.1.757b/spiffs.bin"
         }
       ]
     }
