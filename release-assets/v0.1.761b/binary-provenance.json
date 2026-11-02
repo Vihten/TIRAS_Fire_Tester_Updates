@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "version": "0.1.761b",
+  "tag": "v0.1.761b",
+  "firmwareAsset": "firmware-0.1.761b.bin",
+  "firmwareSizeBytes": 3349104,
+  "firmwareSha256": "05eb87f3b1306c198393dcf2d48a0244035d447f24b5d64448c7037298c2fc52",
+  "artifactRecordSha256": "487fe974dc289ec4774adfe28c55c1baf00e6ae84fcc0cdc7bd10c5b2f50d196",
+  "localSnapshotSha256": "854a15784d49e74498932dd0f91aa007ce311cdb0df403654324aec9b1b5530d",
+  "filesystemAssetSource": "verified 0.1.759b asset; all data/ input hashes and sizes match",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; this release contains binary assets only"
+}
