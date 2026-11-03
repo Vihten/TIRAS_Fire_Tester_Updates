@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "version": "0.1.764b",
+  "tag": "v0.1.764b",
+  "firmwareAsset": "firmware-0.1.764b.bin",
+  "firmwareSizeBytes": 3355696,
+  "firmwareSha256": "0a1abf50a3ba4ea2e617cfa6b3e872e312ab81536a2fa8d05dfbf5e58c5ed06d",
+  "artifactRecordSha256": "2c34e7cba25c4e501141ed3ad4de3cbb5f689513a69dfeca90c491905a323c65",
+  "buildLogSha256": "c8b2162e7c92609fa76645867edc1158888512364db06643c57a817dd527d26d",
+  "candidatePlanSha256": "7a8fa4db13947b379ac910e7ca3fa07b013dccbd4c5a44b1b807005efbdfd76e",
+  "sourceApprovalSha256": "f6276fe19078a3e4d0d1db1b2c4ddd76968b614248e14494d74ee0d2bcd5223e",
+  "settingsHostTestSha256": "6e5fc8c59ee3aab6eedc55b13ec93b089d8cd5588a3a1e63e3b07fbc3bdaa029",
+  "filesystemAssetSource": "normal-release-764 build; bytes equal pinned 0.1.763b asset",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; this release contains binary assets only",
+  "hardwareVerified": false
+}
