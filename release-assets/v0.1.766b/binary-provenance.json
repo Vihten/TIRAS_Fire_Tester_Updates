@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "version": "0.1.766b",
+  "tag": "v0.1.766b",
+  "firmwareAsset": "firmware-0.1.766b.bin",
+  "firmwareSizeBytes": 3359712,
+  "firmwareSha256": "197a3af2ebe840a9d3dbdfcfc223a47493062c472525d97decff99a4b0c30254",
+  "artifactRecordSha256": "29c0532ec1c416c7fcdcb9c8670ee2e7271b8c185a08b65edaedcaf97d0cb201",
+  "candidatePlanSha256": "772601237c5dfd7664b1ed27bcb81b35e29233990388a5ece299d81e3b822f20",
+  "candidateInventorySha256": "9ee020e759a02e5113fd720529066e0f4d67537990350da97041d67d33dd14f7",
+  "approvedSourceDeltaSha256": {
+    "src/App/AppRuntime.cpp": "dfbcb4f41b88a5006b7eea325c80d17d0296832a3a2182a2b4c42f01beae9654",
+    "src/Back/Charge_controler/Charge_controler.cpp": "6337462d2505f67ea9dd3302fc629655f12b5fc5b63d84d426be83b113bf7977",
+    "src/Back/Charge_controler/SW6115.cpp": "240d3a476442343cb6ebc4c716ac609c14f2fd9f3b2e7ebe0751f87c52ebd3c0",
+    "src/Back/Diagnostics/PowerTest.cpp": "3bc2186beb0e24936567f112bde7fab7c39a0e52cb4d68ba69091bc954adfa65",
+    "src/Back/Diagnostics/PowerTest.h": "f94ba4710505054f317584efe15a26bb18e6da4da0f7c02cb074f6d4c22c17f3",
+    "src/Back/Diagnostics/PowerTestExport.cpp": "84fb22aafb4e023a0b9de0098bad4a8b3111a1445a2cbf1a1718f9006402c86e",
+    "src/Back/Diagnostics/RuntimeCurrentDiagnostics.cpp": "bb9a11fccb73bcbafa6628a669d639aead159eec0e5c4a3e06a264d412d559e1",
+    "src/Front/System/SystemScreen.cpp": "ca94772e6eab16b65b31068a97e3b40e0c8764128984f4f4d41311fe60f6a841",
+    "src/main.cpp": "cd937184420bea6ad2c0f3f942dd6a3d3ebac62805705812a207ec08136856ef"
+  },
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; release contains binary assets only",
+  "hardwareVerified": false,
+  "physicalAcceptance": "pending",
+  "mode1LegacyBehaviorClaim": "source-plan contract only; hardware acceptance pending",
+  "ctrlPwrDataWriteClaim": "candidate source-plan contract; no hardware claim"
+}
