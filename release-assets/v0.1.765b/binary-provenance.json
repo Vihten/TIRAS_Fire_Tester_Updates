@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "version": "0.1.765b",
+  "tag": "v0.1.765b",
+  "firmwareAsset": "firmware-0.1.765b.bin",
+  "firmwareSizeBytes": 3355984,
+  "firmwareSha256": "8ff9bad726bf89ecea45392d9236c705e36c0c1ebc47e61ee5b3f2a6504b5400",
+  "artifactRecordSha256": "4bad4bea48009b53e223f4e83d5648b000f44413b2587caed71ec8ba5fba0172",
+  "candidatePlanSha256": "c1e30747f5df12b83b06569d27fdfb51d6e25ee3d289d9ee75a5d2f005c80e64",
+  "liquidOverlaySha256": "674d4b5e3ab6e5397c0838d488bcca9fad396b1d1091a689a5b3cd356acee570",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; release contains binary assets only",
+  "hardwareVerified": false,
+  "liquidWetProof": false,
+  "chargerFixClaim": false
+}
