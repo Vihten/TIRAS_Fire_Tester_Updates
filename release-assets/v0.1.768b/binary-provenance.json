@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "version": "0.1.768b",
+  "tag": "v0.1.768b",
+  "firmwareAsset": "firmware-0.1.768b.bin",
+  "firmwareSizeBytes": 3369104,
+  "firmwareSha256": "09e2d25563eae14f5bb5d9573acc1d23e5dffc8cab57a2fcc2f698e8b0946bb1",
+  "artifactRecordSha256": "7e197003dd2ad15118fe8589dd66d7fa40ae78befb5185720e5732f4da12bd0a",
+  "candidatePlanSha256": "b927dd9ef01defd18bdd3fff98b05b7a7acbbbcbf43034208339e7a6b68c8dc2",
+  "candidateInventorySha256": "f969c4ede394a9b35e66c1ddd1ba7e101431ace2a88b4d5141131e91985ca68e",
+  "approvedSourceDeltaSha256": {
+    "src/App/AppRuntime.cpp": "8cbfdd622c6b89bcd43734486f3c1538be626b63d2653b96651b9c02e8cd6585",
+    "src/Back/Diagnostics/CompensatedCurrentReference.cpp": "52596514fb60a98b7e1ab4374293681192558a288ba97d43ce50ad9a834f3675",
+    "src/main.cpp": "2eaee8268c195d0f8189843eb5c2342194401a61fb1c39cffc0a3dd4f56c3361"
+  },
+  "baselineFileCount": 1467,
+  "finalFileCount": 1467,
+  "exactChangedPaths": [
+    "src/App/AppRuntime.cpp",
+    "src/Back/Diagnostics/CompensatedCurrentReference.cpp",
+    "src/main.cpp"
+  ],
+  "publicMainBaselineManifestSha256": "034dd6b6d1a5863f230896c3c68d51d5caba1ce874e66bb1e748b72bd3fd8823",
+  "publicMainBaselineGitBlobSha": "741c0716e4fb32414db23a96a8e0387841c9a7aa",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; release contains binary assets only",
+  "hardwareVerified": false,
+  "physicalAcceptance": "pending",
+  "calibrationAcceptance": "pending physical/runtime verification"
+}
