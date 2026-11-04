@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "version": "0.1.767b",
+  "tag": "v0.1.767b",
+  "firmwareAsset": "firmware-0.1.767b.bin",
+  "firmwareSizeBytes": 3368992,
+  "firmwareSha256": "8dd6513543e93bd922a4d2d56a6b8a9e418839043cfb44cc8c826018bf288595",
+  "artifactRecordSha256": "74fa58991570fad3d653cfea15fa35d6d2b5bda793a73b75fc399df49e5918ae",
+  "candidatePlanSha256": "065436c78f67864a7d3d4a9a95259e11fbc0373e1145fc9be37c42abb2905e9d",
+  "candidateInventorySha256": "7b175e00c5b0da98e023b37208ea347d6d42935bd90bb93a7ab70de51240d8f1",
+  "approvedSourceDeltaSha256": {
+    "src/App/AppRuntime.cpp": "5c9c908e475c393c7da7c708e50803e8893394fb4b72c3c171b39b88db49b150",
+    "src/Back/Diagnostics/CompensatedCurrentReference.cpp": "af149a017e9ca55de9fa57625540cc61eac7946f514ee85e265cd68a2b3de4ae",
+    "src/Back/Diagnostics/CompensatedCurrentReference.h": "1d3283d77dab9014e2e72bcd6e081a0a25150d3c91d16dbbfd6df1541e24d367",
+    "src/Back/Diagnostics/PowerTest.cpp": "6aca522696630a50ea4393f5c48fbe5802703a47079df5675d62312d9bc86603",
+    "src/Back/Diagnostics/PowerTest.h": "f57be25fcc041ef0acf0ef47402ae5b87d0222a0c01e64e7828998a77631aa35",
+    "src/Back/Diagnostics/PowerTestExport.cpp": "9ff0a1408428b2a558044020358ff25f56b0a6b0289e977441fc55a127fbe811",
+    "src/Back/Diagnostics/RuntimeCurrentDiagnostics.cpp": "13e744571833eed3b2ea8c201d49a0c10b0c63832e94dd361cc149f049d2329d",
+    "src/Back/Diagnostics/RuntimeCurrentDiagnostics.h": "c7ba975ec86fd92ba48d859855dfb663804860cc694238e6d6f0c2ea4d99c513",
+    "src/main.cpp": "244ab660efd7a14ca7dec194f2d2994e0cf54dbee2d92107d601e176cc53acce"
+  },
+  "inventoryMetadataCorrection": {
+    "planCandidateFileCount": 1465,
+    "derivedFinalInventoryFileCount": 1467,
+    "addedFiles": [
+      "src/Back/Diagnostics/CompensatedCurrentReference.cpp",
+      "src/Back/Diagnostics/CompensatedCurrentReference.h"
+    ],
+    "reason": "plan count records the pre-overlay 1465-file workspace; sealed final inventory includes two approved new reference module files"
+  },
+  "publicMainBaselineManifestSha256": "989705721060abea847aa063c4d09f30fedf720bffb71cc3b3254a26d63feb9f",
+  "publicMainBaselineGitBlobSha": "c50863addaee4180ce740e8db69f36ca42500ffe",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; release contains binary assets only",
+  "hardwareVerified": false,
+  "physicalAcceptance": "pending",
+  "calibrationAcceptance": "pending physical/runtime verification"
+}
