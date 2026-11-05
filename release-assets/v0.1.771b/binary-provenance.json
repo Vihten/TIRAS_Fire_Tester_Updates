@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "version": "0.1.771b",
+  "tag": "v0.1.771b",
+  "firmwareAsset": "firmware-0.1.771b.bin",
+  "firmwareSizeBytes": 3387424,
+  "firmwareSha256": "8ea3052d3620606df4b985b2dcb41d5f8b5e289dddb4e740b9715ef2b52b87a2",
+  "artifactRecordSha256": "257004387d2925dfd4ef9d0de56e0f1d4dd7c887d3cad575f9677b18f9124f7c",
+  "candidatePlanSha256": "8fc98ee8ad69f41da249cf59409fd7eac9c262e7facf73d08ba1ce49ed667271",
+  "candidateInventorySha256": "574ae1bd9442ce1509388f2e015f4f5e9482f614dd36316d0f9e2ca5e4467f76",
+  "approvedSourceDeltaSha256": {
+    "src/Back/CartridgeMonitor/CartridgeMonitor.cpp": "e02ee3a1b6811a3d05641b3362df755c227d7d018ca57e683b0f7f3eee311074",
+    "src/Back/CartridgeMonitor/CartridgeMonitor.h": "6691aee61978fc55b92f6bfae413488aa008f408fc23a1d4c44ac713824dfca8",
+    "src/Back/SmokeManagment/smoke.cpp": "4fb8d69a52eec2095ca7d95a15bac910891db9a5e06f14c10c22777d69750fd2",
+    "src/main.cpp": "fb056626219fd105faed0aa37a945b8ee0f8d3146ac3515f272d489c0ce97ebc"
+  },
+  "baselineFileCount": 1468,
+  "finalFileCount": 1468,
+  "exactChangedPaths": [
+    "src/Back/CartridgeMonitor/CartridgeMonitor.cpp",
+    "src/Back/CartridgeMonitor/CartridgeMonitor.h",
+    "src/Back/SmokeManagment/smoke.cpp",
+    "src/main.cpp"
+  ],
+  "publicMainBaselineManifestSha256": "348b15d3b80a07a168bda309d88d5df2e1142e2b4b8f4239f64137f5eb140b76",
+  "publicMainBaselineGitBlobSha": "6f8d8152dabcadeb90dc692d7fe658bc8ffea643",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; release contains binary assets only",
+  "hardwareVerified": false,
+  "physicalAcceptance": "pending",
+  "calibrationAcceptance": "pending physical/runtime verification"
+}
