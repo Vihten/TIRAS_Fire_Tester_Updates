@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "version": "0.1.773b",
+  "tag": "v0.1.773b",
+  "firmwareAsset": "firmware-0.1.773b.bin",
+  "firmwareSizeBytes": 3399584,
+  "firmwareSha256": "b54b1c721fa5b479b38441060df952b619255f72ed151ed3daedd136eb6883de",
+  "artifactRecordSha256": "79b61db04c95b2fefa78516641af51b7bb4587e7d274b2298baebd67dd1aca9e",
+  "candidatePlanSha256": "d990970aef2e9a607fba0ec53296ebde67c3a91c361d0e5697d593fa970b7779",
+  "candidateInventorySha256": "6e85acdbc1b76fb5626d6d9f57d88e75028d03c013079a3a9202bdb7d4f34c15",
+  "approvedSourceDeltaSha256": {
+    "src/Back/CartridgeMonitor/CartridgeMonitor.cpp": "1f02dbed2e029ae653e204930567ca35a21ec20169624480ee67ca56af57699d",
+    "src/Front/Mode_changer/Mode.cpp": "d68eb34812aa405102faa832e19fb4b32acb9854ae34393a5081a8c7cd440b71",
+    "src/Front/Mode_changer/Mode.h": "44c31ddee6b14c29537a60ee4c34cb6df266d6cb8243c665f939227f70ff178a",
+    "src/TaskManager/TaskManager.cpp": "1bc2ff9e1c9f19d852d1b55d635d143b9798a476d8796bae46236f126c467402",
+    "src/main.cpp": "7d6451b576ba16b3b0654df1318044b2625fa15bd95d3721871d5a2600bf41b7"
+  },
+  "baselineFileCount": 1468,
+  "finalFileCount": 1468,
+  "exactChangedPaths": [
+    "src/Back/CartridgeMonitor/CartridgeMonitor.cpp",
+    "src/Front/Mode_changer/Mode.cpp",
+    "src/Front/Mode_changer/Mode.h",
+    "src/TaskManager/TaskManager.cpp",
+    "src/main.cpp"
+  ],
+  "publicMainBaselineManifestSha256": "279a7682bc7288206bff8f1e13092fb367a2b87023617d274b87efa2d5f6d8c9",
+  "publicMainBaselineGitBlobSha": "ece92e50a44409a04488539cd7058ad6fd7d48f5",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; release contains binary assets only",
+  "hardwareVerified": false,
+  "physicalAcceptance": "pending",
+  "calibrationAcceptance": "pending physical/runtime verification"
+}
