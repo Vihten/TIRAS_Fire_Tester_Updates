@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "version": "0.1.774b",
+  "tag": "v0.1.774b",
+  "firmwareAsset": "firmware-0.1.774b.bin",
+  "firmwareSizeBytes": 3401456,
+  "firmwareSha256": "e25477a122b627dcd518fe79fbb45631512eb6ee8c9701d73375734762b84c60",
+  "artifactRecordSha256": "e440de31093d5bb35859627324b6a553dcd30b87d672bd4192432143bbd457ab",
+  "candidatePlanSha256": "31d88aa4a521a9912554c22964998f7cdd78005c9e2b944a8d6521db58166d17",
+  "candidateInventorySha256": "4ebe4c042154a785f9bded71d75f5c692c807c5a2a6ce25b014a8466979bb949",
+  "approvedSourceDeltaSha256": {
+    "src/Back/Diagnostics/PowerTest.cpp": "cf2bbb11de57ec8dfcec4fe14c9231d7fc81e7f66e5cda312f701aa76da87e8f",
+    "src/Front/Mode_changer/Mode.cpp": "871c8d7b3880465e10d2754eb88fb0f7c421b5ab0a1262ea178900140fa78b24",
+    "src/Front/Modes/Settings/SettingModeScreen/Setting_Mode_screen_runtime.cpp": "5c248e51c247b7d8ec36191577fa04c29d5734014499cf46b201fd959c265896",
+    "src/Front/Modes/Settings/Settings_Mode_screen.h": "5e860bec908a21bd75d1cb973de843dbdbc04197d6643ec01be494f9274572ae",
+    "src/TaskManager/TaskManager.cpp": "91e21cf34e92b19a8c2ad84996aa8e1e6f50d16dd2b2a13a06666596745563db",
+    "src/main.cpp": "4f2cfa3bb17747a56b871fae88bb86bc394c616a62671bdea56bc5b54370e6f4"
+  },
+  "baselineFileCount": 1468,
+  "finalFileCount": 1468,
+  "exactChangedPaths": [
+    "src/Back/Diagnostics/PowerTest.cpp",
+    "src/Front/Mode_changer/Mode.cpp",
+    "src/Front/Modes/Settings/SettingModeScreen/Setting_Mode_screen_runtime.cpp",
+    "src/Front/Modes/Settings/Settings_Mode_screen.h",
+    "src/TaskManager/TaskManager.cpp",
+    "src/main.cpp"
+  ],
+  "publicMainBaselineManifestSha256": "b71a06f48dad22947c43bc58c3141dff4df0ddc937b54d39c6357a4e7af31109",
+  "publicMainBaselineGitBlobSha": "be7d48254b34707f3627900e991e4339895a356d",
+  "sourceRepositoryCommit": null,
+  "sourcePublication": "not included; release contains binary assets only",
+  "hardwareVerified": false,
+  "physicalAcceptance": "pending",
+  "calibrationAcceptance": "pending physical/runtime verification"
+}
