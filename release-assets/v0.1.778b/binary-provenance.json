@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "version": "0.1.778b",
+  "binaryOnly": true,
+  "firmwareSizeBytes": 3402368,
+  "firmwareSha256": "ab4edb24c5ab6ccf30a5a927810465495d8fe24d972c1583d2c31181231b838e",
+  "buildEnvironment": "esp32-s3-devkitm-1",
+  "buildCommand": "pio run -e esp32-s3-devkitm-1",
+  "buildResult": "success",
+  "ramUsagePercent": 42.6,
+  "flashUsagePercent": 52.4,
+  "sourceCommit": "not asserted",
+  "hardwareVerified": false,
+  "note": "Binary-only beta. Compiled from the local working tree; no source code or source repository commit is included or claimed. Physical OTA/runtime acceptance remains pending."
+}
