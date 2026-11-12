@@ -2,8 +2,11 @@ name: Publish OTA release
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
+    paths:
+      - release-assets/**
+      - .github/workflows/publish-ota-release.yml
 
 permissions:
   contents: write
@@ -16,43 +19,39 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out tagged release assets
+      - name: Check out versioned release assets
         uses: actions/checkout@v4
 
-      - name: Validate and publish GitHub Release
+      - name: Validate and publish immutable GitHub Release
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-
-          release_tag="${GITHUB_REF_NAME}"
-          manifest_tag="$(jq -r '.release.tag // .tag' ota-manifest.json)"
-          release_name="$(jq -r '.release.name // .releaseName' ota-manifest.json)"
-          release_notes="$(jq -r '.notes' ota-manifest.json)"
-          asset_name="$(jq -r '.assetName' ota-manifest.json)"
-          asset_dir="release-assets/${release_tag}"
+          manifest_path="$(find release-assets -mindepth 2 -maxdepth 2 -name ota-manifest.json -print | sort -V | tail -n 1)"
+          test -n "${manifest_path}"
+          asset_dir="$(dirname "${manifest_path}")"
+          release_tag="$(jq -er '.release.tag // .tag' "${manifest_path}")"
+          release_name="$(jq -er '.release.name // .releaseName' "${manifest_path}")"
+          release_notes="$(jq -er '.notes' "${manifest_path}")"
+          asset_name="$(jq -er '.assetName' "${manifest_path}")"
+          test "${asset_dir}" = "release-assets/${release_tag}"
+          test "${release_tag}" = "$(jq -er '.version' "${manifest_path}" | sed 's/^/v/')"
           checksums="${asset_dir}/SHA256SUMS.txt"
-          release_flags=(--latest)
-          if [[ "${release_tag}" == *b ]]; then
-            release_flags=(--prerelease --latest=false)
-          fi
-
-          test "${manifest_tag}" = "${release_tag}"
           test -s "${asset_dir}/${asset_name}"
           test -s "${checksums}"
-          (
-            cd "${asset_dir}"
-            sha256sum --check "SHA256SUMS.txt"
-          )
-
+          (cd "${asset_dir}" && sha256sum --check SHA256SUMS.txt)
           if gh release view "${release_tag}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
-            gh release upload "${release_tag}" "${asset_dir}"/*.bin "${checksums}" \
-              --repo "${GITHUB_REPOSITORY}" --clobber
-            gh release edit "${release_tag}" --repo "${GITHUB_REPOSITORY}" \
-              "${release_flags[@]}" --title "${release_name}" --notes "${release_notes}"
-          else
-            gh release create "${release_tag}" "${asset_dir}"/*.bin "${checksums}" \
-              --repo "${GITHUB_REPOSITORY}" --verify-tag "${release_flags[@]}" \
-              --title "${release_name}" --notes "${release_notes}"
+            echo "Release ${release_tag} already exists; refusing to replace immutable assets." >&2
+            exit 1
           fi
+
+          release_flags=()
+          if [[ "${release_tag}" == *b ]]; then
+            release_flags=(--prerelease --latest=false)
+          else
+            release_flags=(--latest)
+          fi
+          gh release create "${release_tag}" "${asset_dir}"/*.bin "${checksums}" \
+            --repo "${GITHUB_REPOSITORY}" --target "${GITHUB_SHA}" \
+            "${release_flags[@]}" --title "${release_name}" --notes "${release_notes}"
