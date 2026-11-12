@@ -6,7 +6,7 @@
                     "tag":  "v0.1.804b",
                     "name":  "Fire Tester firmware 0.1.804b"
                 },
-    "notes":  "Binary-only beta update 0.1.804b. Firmware 0.1.804b was installed and liquid intermediate behavior was verified. Physical IR behavior remains unverified. No SPIFFS image was available from this exact build, so none is included. No firmware source code is included.",
+    "notes":  "Binary-only beta update 0.1.804b. Firmware 0.1.804b was installed and liquid intermediate behavior was verified. Physical IR behavior remains unverified. The SPIFFS image is built from the release filesystem assets and included at 0xC90000. No firmware source code is included.",
     "version":  "0.1.804b",
     "tag":  "v0.1.804b",
     "releaseName":  "Fire Tester 0.1.804b",
@@ -42,6 +42,13 @@
                           "sha256":  "7c1913e0a764bc499e6ba5888febb81629fb7b188145d274e21e9613c6ac608f",
                           "assetName":  "firmware-0.1.804b.bin",
                           "downloadUrl":  "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.804b/firmware-0.1.804b.bin"
+                      },
+                      {
+                          "offset":  "0xC90000",
+                          "sizeBytes":  3538944,
+                          "sha256":  "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
+                          "assetName":  "spiffs.bin",
+                          "downloadUrl":  "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.804b/spiffs.bin"
                       }
                   ],
     "migration":  {
@@ -83,6 +90,13 @@
                                                         "sha256":  "7c1913e0a764bc499e6ba5888febb81629fb7b188145d274e21e9613c6ac608f",
                                                         "assetName":  "firmware-0.1.804b.bin",
                                                         "downloadUrl":  "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.804b/firmware-0.1.804b.bin"
+                                                    },
+                                                    {
+                                                        "offset":  "0xC90000",
+                                                        "sizeBytes":  3538944,
+                                                        "sha256":  "ce41e0def06017ecb117f10027180fa5e59f65f534a47c80b8517da893709be8",
+                                                        "assetName":  "spiffs.bin",
+                                                        "downloadUrl":  "https://github.com/Vihten/TIRAS_Fire_Tester_Updates/releases/download/v0.1.804b/spiffs.bin"
                                                     }
                                                 ],
                                   "assetName":  "firmware-0.1.804b.bin",
