@@ -1,0 +1,26 @@
+name: Complete Fire 804 SPIFFS asset
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/complete-fire-spiffs.yml']
+permissions:
+  contents: write
+jobs:
+  complete:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate and upload missing filesystem
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd release-assets/v0.1.804b
+          sha256sum --check SPIFFS-SHA256SUMS.txt
+          test "$(stat -c%s spiffs.bin)" = 3538944
+          gh release upload v0.1.804b spiffs.bin SPIFFS-SHA256SUMS.txt
+          mkdir verify
+          gh release download v0.1.804b --pattern spiffs.bin --pattern SPIFFS-SHA256SUMS.txt --dir verify
+          (cd verify && sha256sum --check SPIFFS-SHA256SUMS.txt)
